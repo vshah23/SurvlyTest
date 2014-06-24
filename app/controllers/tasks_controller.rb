@@ -73,6 +73,26 @@ class TasksController < ApplicationController
     end
   end
 
+### Add archive support
+  def archive
+    @task = set_task
+    if @task.update_attributes(archived: true)
+      redirect_to tasks_url, notice: 'Task was successfully archived.'
+    else
+      redirect_to tasks_url, notice: 'Failed to archive task.'
+    end
+  end
+
+### Add completion support
+  def complete
+    @task = set_task
+    if @task.update_attributes(complete: true)
+      redirect_to tasks_url
+    else
+      redirect_to tasks_url, notice: 'Failed to complete task'
+    end
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_task
