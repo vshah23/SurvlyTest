@@ -1,0 +1,2 @@
+      invoke  active_record
+   identical    db/migrate/20140628063409_set_default_values.rb

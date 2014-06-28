@@ -12899,3 +12899,822 @@ Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2014-06-27 19:36:12 -0500
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-27 19:36:12 -0500
+
+
+Started GET "/tasks/23/edit" for 127.0.0.1 at 2014-06-27 20:11:49 -0500
+Processing by TasksController#edit as HTML
+  Parameters: {"exclude"=>[:show], "id"=>"23"}
+  [1m[35mTask Load (0.1ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT 1  [["id", "23"]]
+  Rendered tasks/_form.html.erb (1.8ms)
+  Rendered tasks/edit.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 26ms (Views: 24.6ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/tasks/23" for 127.0.0.1 at 2014-06-27 20:11:52 -0500
+Processing by TasksController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9mpJ6I1ols6XZkzffv3sMmTyGwGUUYJNnqc+ZLE8c4E=", "task"=>{"complete"=>"1", "archived"=>"0", "title"=>"<code>[B]</code> Style completed tasks", "description"=>"Tasks even when completed are shown.  Style the completed tasks such that it is instantly evident that they are completed."}, "commit"=>"Update Task", "exclude"=>[:show], "id"=>"23"}
+  [1m[36mTask Load (0.1ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", "23"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "tasks" SET "complete" = ?, "updated_at" = ? WHERE "tasks"."id" = 23[0m  [["complete", true], ["updated_at", Sat, 28 Jun 2014 01:11:52 UTC +00:00]]
+  [1m[35m (1.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/tasks
+Completed 302 Found in 4ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2014-06-27 20:11:52 -0500
+Processing by TasksController#index as HTML
+  Parameters: {"exclude"=>[:show]}
+  Rendered tasks/_form.html.erb (1.4ms)
+  Rendered tasks/_search_form.html.erb (0.3ms)
+  [1m[36mTask Load (0.1ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."archived" = 'f'[0m
+  Rendered tasks/index.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 17ms (Views: 16.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/docs.css?body=1" for 127.0.0.1 at 2014-06-27 20:11:52 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-27 20:11:52 -0500
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2014-06-27 20:11:52 -0500
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-06-27 20:11:52 -0500
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-06-27 20:11:52 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-27 20:11:52 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-27 20:11:52 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-27 20:11:52 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-27 20:11:52 -0500
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-06-27 20:11:52 -0500
+
+
+Started GET "/assets/docs.js?body=1" for 127.0.0.1 at 2014-06-27 20:11:52 -0500
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2014-06-27 20:11:52 -0500
+
+
+Started GET "/assets/maps_javascript.js?body=1" for 127.0.0.1 at 2014-06-27 20:11:52 -0500
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2014-06-27 20:11:52 -0500
+
+
+Started GET "/assets/tasks_javascript.js?body=1" for 127.0.0.1 at 2014-06-27 20:11:52 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-27 20:11:52 -0500
+
+
+Started GET "/tasks/25/edit" for 127.0.0.1 at 2014-06-27 20:13:23 -0500
+Processing by TasksController#edit as HTML
+  Parameters: {"exclude"=>[:show], "id"=>"25"}
+  [1m[35mTask Load (0.1ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT 1  [["id", "25"]]
+  Rendered tasks/_form.html.erb (2.0ms)
+  Rendered tasks/edit.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/tasks/25" for 127.0.0.1 at 2014-06-27 20:13:26 -0500
+Processing by TasksController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9mpJ6I1ols6XZkzffv3sMmTyGwGUUYJNnqc+ZLE8c4E=", "task"=>{"complete"=>"1", "archived"=>"0", "title"=>"<code>[B]</code> Style buttons", "description"=>"The buttons to the right of the task table are a bit jumbled.  Update styles so that they are on the same line and pleasantly spaced."}, "commit"=>"Update Task", "exclude"=>[:show], "id"=>"25"}
+  [1m[36mTask Load (0.1ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", "25"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "tasks" SET "complete" = ?, "updated_at" = ? WHERE "tasks"."id" = 25[0m  [["complete", true], ["updated_at", Sat, 28 Jun 2014 01:13:26 UTC +00:00]]
+  [1m[35m (1.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/tasks
+Completed 302 Found in 4ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2014-06-27 20:13:26 -0500
+Processing by TasksController#index as HTML
+  Parameters: {"exclude"=>[:show]}
+  Rendered tasks/_form.html.erb (1.6ms)
+  Rendered tasks/_search_form.html.erb (0.4ms)
+  [1m[36mTask Load (0.3ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."archived" = 'f'[0m
+  Rendered tasks/index.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 16ms (Views: 15.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-06-27 20:13:26 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-27 20:13:26 -0500
+
+
+Started GET "/assets/docs.css?body=1" for 127.0.0.1 at 2014-06-27 20:13:26 -0500
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2014-06-27 20:13:26 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-27 20:13:26 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-27 20:13:26 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-27 20:13:26 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-27 20:13:26 -0500
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-06-27 20:13:26 -0500
+
+
+Started GET "/assets/docs.js?body=1" for 127.0.0.1 at 2014-06-27 20:13:26 -0500
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2014-06-27 20:13:26 -0500
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-06-27 20:13:26 -0500
+
+
+Started GET "/assets/maps_javascript.js?body=1" for 127.0.0.1 at 2014-06-27 20:13:26 -0500
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2014-06-27 20:13:26 -0500
+
+
+Started GET "/assets/tasks_javascript.js?body=1" for 127.0.0.1 at 2014-06-27 20:13:26 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-27 20:13:26 -0500
+
+
+Started GET "/tasks/26/edit" for 127.0.0.1 at 2014-06-27 20:13:53 -0500
+Processing by TasksController#edit as HTML
+  Parameters: {"exclude"=>[:show], "id"=>"26"}
+  [1m[35mTask Load (0.1ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT 1  [["id", "26"]]
+  Rendered tasks/_form.html.erb (2.2ms)
+  Rendered tasks/edit.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2014-06-27 20:16:49 -0500
+Processing by TasksController#index as HTML
+  Parameters: {"exclude"=>[:show]}
+Completed 500 Internal Server Error in 1ms
+
+SyntaxError (/Users/vikas/SurvlyTest/app/models/task.rb:3: syntax error, unexpected '}', expecting =>
+... false, default: false,  :null},
+...                               ^
+/Users/vikas/SurvlyTest/app/models/task.rb:4: syntax error, unexpected '}', expecting =>):
+  app/controllers/tasks_controller.rb:7:in `index'
+
+
+  Rendered /Users/vikas/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/vikas/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/vikas/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/vikas/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.7ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2014-06-28 01:15:55 -0500
+Processing by TasksController#index as HTML
+  Parameters: {"exclude"=>[:show]}
+Completed 500 Internal Server Error in 1ms
+
+SyntaxError (/Users/vikas/SurvlyTest/app/models/task.rb:3: syntax error, unexpected '}', expecting =>
+... false, default: false,  :null},
+...                               ^
+/Users/vikas/SurvlyTest/app/models/task.rb:4: syntax error, unexpected '}', expecting =>):
+  app/controllers/tasks_controller.rb:7:in `index'
+
+
+  Rendered /Users/vikas/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/vikas/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /Users/vikas/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.5ms)
+  Rendered /Users/vikas/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.2ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2014-06-28 01:16:17 -0500
+Processing by TasksController#index as HTML
+  Parameters: {"exclude"=>[:show]}
+  Rendered tasks/_form.html.erb (3.9ms)
+  Rendered tasks/_search_form.html.erb (0.4ms)
+  [1m[36mTask Load (0.2ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."archived" = 'f'[0m
+  Rendered tasks/index.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 19ms (Views: 17.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-28 01:16:17 -0500
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-06-28 01:16:17 -0500
+
+
+Started GET "/assets/docs.css?body=1" for 127.0.0.1 at 2014-06-28 01:16:17 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-28 01:16:17 -0500
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2014-06-28 01:16:17 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-28 01:16:17 -0500
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-06-28 01:16:17 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-28 01:16:17 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-28 01:16:17 -0500
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-06-28 01:16:17 -0500
+
+
+Started GET "/assets/docs.js?body=1" for 127.0.0.1 at 2014-06-28 01:16:17 -0500
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2014-06-28 01:16:17 -0500
+
+
+Started GET "/assets/maps_javascript.js?body=1" for 127.0.0.1 at 2014-06-28 01:16:17 -0500
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2014-06-28 01:16:17 -0500
+
+
+Started GET "/assets/tasks_javascript.js?body=1" for 127.0.0.1 at 2014-06-28 01:16:17 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-28 01:16:17 -0500
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (22.6ms)[0m  INSERT INTO "tasks" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Sat, 28 Jun 2014 06:22:51 UTC +00:00], ["description", "dummy description"], ["title", "new task"], ["updated_at", Sat, 28 Jun 2014 06:22:51 UTC +00:00]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/tasks" for 127.0.0.1 at 2014-06-28 01:38:05 -0500
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+ActiveRecord::PendingMigrationError (Migrations are pending; run 'bin/rake db:migrate RAILS_ENV=development' to resolve this issue.):
+  activerecord (4.0.5) lib/active_record/migration.rb:383:in `check_pending!'
+  activerecord (4.0.5) lib/active_record/migration.rb:370:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.5) lib/active_support/callbacks.rb:373:in `_run__2280574310931258075__call__callbacks'
+  activesupport (4.0.5) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.5) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.5) lib/rails/engine.rb:511:in `call'
+  railties (4.0.5) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/vikas/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/vikas/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/vikas/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/vikas/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.3ms)
+  Rendered /Users/vikas/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /Users/vikas/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /Users/vikas/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.7ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to SetDefaultValues (20140628063409)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2014-06-28 01:45:29 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActiveRecord::PendingMigrationError (Migrations are pending; run 'bin/rake db:migrate RAILS_ENV=development' to resolve this issue.):
+  activerecord (4.0.5) lib/active_record/migration.rb:383:in `check_pending!'
+  activerecord (4.0.5) lib/active_record/migration.rb:370:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.5) lib/active_support/callbacks.rb:373:in `_run__2280574310931258075__call__callbacks'
+  activesupport (4.0.5) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.5) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.5) lib/rails/engine.rb:511:in `call'
+  railties (4.0.5) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/vikas/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/vikas/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/vikas/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/vikas/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /Users/vikas/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /Users/vikas/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/vikas/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.3ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to SetDefaultValues (20140628063409)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.8ms)[0m  [1mCREATE TEMPORARY TABLE "atasks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "description" text, "complete" boolean, "archived" boolean, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.2ms)[0m  SELECT * FROM "tasks"
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "atasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (20, '<b>Instructions: Read Carefully!</b>', '<h1>Task List Instructions</h1>
+
+<p>Now that you have properly configured Ruby and Rails on your machine, we have a few challenge questions listed below in this task list.
+<strong>REQUIREMENTS</strong> for completion are listed below.</p>
+
+<ol>
+<li>Complete as many as you can/want to complete, but you <strong>must AT LEAST complete 1 from each task class</strong> (<code>[A]</code>, <code>[B]</code>, <code>[C]</code>, <code>[D]</code>, and <code>[E]</code>). We encourage you to complete as many as you can.</li>
+<li>Clearly mark all modified code with comments indicating the task by title (e.g., <code>### Add archive support</code>).</li>
+<li>Try to complete every challenge question in a single commit and use the task title as the commit message (e.g., <code>Add complete support</code>).</li>
+</ol>
+
+<p>If you can&#39;t get something working, add a comment to the README file or in the source describing what you were trying to do and why you think its not working.
+There is no reason to spend an exorbitant amount of time on any one of these questions. They should be fairly straight-forward. Tasks like these will be frequent.</p>
+
+<p>I recommend doing &#39;Add archive support&#39; first then archiving tasks you don&#39;t want to do. Just make sure you get one from each task class!</p>
+
+<p><strong>Good Luck!</strong></p>
+', 'f', 't', '2014-06-23 18:37:04.474038', '2014-06-26 03:35:19.705556')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "atasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (21, '<code>[A]</code> Add complete support', 'Currently, there is no way for a user to complete a task. Make clicking the check-box complete the task asynchronously.', 'f', 'f', '2014-06-23 18:37:04.478274', '2014-06-28 00:03:11.062783')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "atasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (22, '<code>[A]</code> Add archive support', 'Currently, there is no way for a user to archive a task. Make clicking the archive button archive the task (does not have to be asynchronous).', 't', 'f', '2014-06-23 18:37:04.480916', '2014-06-27 23:13:54.233951')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "atasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (23, '<code>[B]</code> Style completed tasks', 'Tasks even when completed are shown. Style the completed tasks such that it is instantly evident that they are completed.', 't', 'f', '2014-06-23 18:37:04.483457', '2014-06-28 01:11:52.068071')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "atasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (24, '<code>[B]</code> Center ''Archived Tasks'' button', 'The ''View Archived Tasks'' is currently not centered in the <code>.panel-heading</code> div. Update styles as needed to perfectly center the button vertically in the heading div.', 'f', 'f', '2014-06-23 18:37:04.486018', '2014-06-23 18:37:04.486018')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "atasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (25, '<code>[B]</code> Style buttons', 'The buttons to the right of the task table are a bit jumbled. Update styles so that they are on the same line and pleasantly spaced.', 't', 'f', '2014-06-23 18:37:04.488527', '2014-06-28 01:13:26.875595')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "atasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (26, '<code>[B]</code> Fix issue where edit view shows HTML as TEXT', 'When editing a task, the task title shows HTML. Update the view to render the HTML as HTML instead of TEXT.', 'f', 'f', '2014-06-23 18:37:04.490990', '2014-06-23 18:37:04.490990')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "atasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (27, '<code>[C]</code> Update database defaults for complete and archived', 'Currently, the <code>complete</code> and <code>archived</code> task attributes have no default. Update the database such that complete and archived default to false and disallow null values.', 'f', 'f', '2014-06-23 18:37:04.493476', '2014-06-23 18:37:04.493476')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "atasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (28, '<code>[C]</code> Fix issues with task searching', 'The task search feature doesn''t operate properly. Figure out why and fix it if possible.', 'f', 'f', '2014-06-23 18:37:04.496661', '2014-06-23 18:37:04.496661')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "atasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (29, '<code>[C]</code> Add multi-user support', '<b>This task is only asking for the appropriate models and migrations. No View or Controller code modification is necessary.</b> Add a <code>User</code> model and update the <code>Task</code> model so that a <code>User</code> can have many (0-N) <code>Tasks</code> associated.', 'f', 'f', '2014-06-23 18:37:04.499199', '2014-06-23 18:37:04.499199')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "atasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (30, '<code>[D]</code> Add Twitter integration', 'Add API support for Twitter. Have it post the title as the tweet body when a task is completed.<br/><br/>e.g.,<code>''Add complete support'' was marked complete.</code><br/><br/>Use environment variables to store the required Twitter certificates and user information.', 'f', 'f', '2014-06-23 18:37:04.502016', '2014-06-23 18:37:04.502016')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "atasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (31, '<code>[D]</code> Add ListWise integration', '<a href="http://www.listwisehq.com/support/support_detail.php?cat=API+Docs&title=Making+an+API+Call">ListWise</a> is an email cleaning service with a very straightforward API. Write a Ruby <code>Module</code> to check a given email against their <code>quick-clean</code> service. <br/><br/>Use environment variables to store the required keys and user information.', 'f', 'f', '2014-06-23 18:37:04.504966', '2014-06-23 18:37:04.504966')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "atasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (32, '<code>[D]</code> Add Google Maps integration', '<a href="/maps">This page (/maps)</a> is currently blank. Update the View and Javascript/CoffeeScript files as necessary to display the listed GPS coordinates on a map with "visited" coordinates in <b><font color="red">red</font></b>, "revisit needed" in <b><font color="orange">orange</font></b>, and "never visited" in <b><font color="green">green</font></b>.', 'f', 'f', '2014-06-23 18:37:04.508532', '2014-06-23 18:37:04.508532')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "atasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (33, '<code>[E]</code> Code analysis: <code>Task</code>', 'The <code>Task</code> model has several autogenerated methods. What are they and what do they do?<br/><br/>Put your answers under the appropriate question in <a href="/readme">the ''Section E'' Markdown Document (./section_E.md)</a>.', 'f', 'f', '2014-06-23 18:37:04.511303', '2014-06-23 18:37:04.511303')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "atasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (34, '<code>[E]</code> Server config: <code>RabbitMQ</code>', 'See <a href="/readme">the ''Section E'' Markdown Document (./section_E.md)</a> for details.', 'f', 'f', '2014-06-23 18:37:04.514257', '2014-06-23 18:37:04.514257')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "atasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (35, '<code>[E]</code> Testing: <code>Docs Controller</code>', 'Write a simple set of controllers tests for the Docs controller.', 'f', 'f', '2014-06-23 18:37:04.517255', '2014-06-23 18:37:04.517255')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "atasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (36, '<code>[E]</code> Code Review: <code>Docs Controller</code>', 'Do a code review on the Docs controller and its associated views, tests, and routes.<br/><br/>Place comments on aspects infront of code that you would question or address in a code review. Start each review comment with <code>### REVIEW: [your comment here]</code> to make it easy to find. Be yourself! This question has only shades of grey: there is no <b>right</b> answer. <a href="/readme">(See the ''Section E'' Markdown Document [./section_E.md] for more details.)</a>', 'f', 'f', '2014-06-23 18:37:04.520082', '2014-06-23 18:37:04.520082')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "atasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (37, 'Submit Your Answers!', 'Woot. You''re done. To submit your answers, create a free public account on Github or Bitbucket, push your changes to a public repository, and email the repository''s HTTP URL to <a href="mailto:terry@prospectwise.com">terry@prospectwise.com</a>.
+<br/>
+<br/>
+<b>DO NOT ISSUE A PULL REQUEST</b> or <b>FORK</b> this repository. Other people will then be able to use your answers.
+', 'f', 'f', '2014-06-23 18:37:04.522807', '2014-06-23 18:37:04.522807')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "atasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (38, 'new task', 'dummy description', NULL, NULL, '2014-06-28 06:22:51.701859', '2014-06-28 06:22:51.701859')[0m
+  [1m[35m (16.0ms)[0m  DROP TABLE "tasks"
+  [1m[36m (0.1ms)[0m  [1mCREATE TABLE "tasks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "description" text, "complete" boolean DEFAULT 'f' NOT NULL, "archived" boolean, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "atasks"
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "tasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (20, '<b>Instructions: Read Carefully!</b>', '<h1>Task List Instructions</h1>
+
+<p>Now that you have properly configured Ruby and Rails on your machine, we have a few challenge questions listed below in this task list.
+<strong>REQUIREMENTS</strong> for completion are listed below.</p>
+
+<ol>
+<li>Complete as many as you can/want to complete, but you <strong>must AT LEAST complete 1 from each task class</strong> (<code>[A]</code>, <code>[B]</code>, <code>[C]</code>, <code>[D]</code>, and <code>[E]</code>). We encourage you to complete as many as you can.</li>
+<li>Clearly mark all modified code with comments indicating the task by title (e.g., <code>### Add archive support</code>).</li>
+<li>Try to complete every challenge question in a single commit and use the task title as the commit message (e.g., <code>Add complete support</code>).</li>
+</ol>
+
+<p>If you can&#39;t get something working, add a comment to the README file or in the source describing what you were trying to do and why you think its not working.
+There is no reason to spend an exorbitant amount of time on any one of these questions. They should be fairly straight-forward. Tasks like these will be frequent.</p>
+
+<p>I recommend doing &#39;Add archive support&#39; first then archiving tasks you don&#39;t want to do. Just make sure you get one from each task class!</p>
+
+<p><strong>Good Luck!</strong></p>
+', 'f', 't', '2014-06-23 18:37:04.474038', '2014-06-26 03:35:19.705556')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "tasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (21, '<code>[A]</code> Add complete support', 'Currently, there is no way for a user to complete a task. Make clicking the check-box complete the task asynchronously.', 'f', 'f', '2014-06-23 18:37:04.478274', '2014-06-28 00:03:11.062783')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "tasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (22, '<code>[A]</code> Add archive support', 'Currently, there is no way for a user to archive a task. Make clicking the archive button archive the task (does not have to be asynchronous).', 't', 'f', '2014-06-23 18:37:04.480916', '2014-06-27 23:13:54.233951')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "tasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (23, '<code>[B]</code> Style completed tasks', 'Tasks even when completed are shown. Style the completed tasks such that it is instantly evident that they are completed.', 't', 'f', '2014-06-23 18:37:04.483457', '2014-06-28 01:11:52.068071')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "tasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (24, '<code>[B]</code> Center ''Archived Tasks'' button', 'The ''View Archived Tasks'' is currently not centered in the <code>.panel-heading</code> div. Update styles as needed to perfectly center the button vertically in the heading div.', 'f', 'f', '2014-06-23 18:37:04.486018', '2014-06-23 18:37:04.486018')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "tasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (25, '<code>[B]</code> Style buttons', 'The buttons to the right of the task table are a bit jumbled. Update styles so that they are on the same line and pleasantly spaced.', 't', 'f', '2014-06-23 18:37:04.488527', '2014-06-28 01:13:26.875595')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "tasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (26, '<code>[B]</code> Fix issue where edit view shows HTML as TEXT', 'When editing a task, the task title shows HTML. Update the view to render the HTML as HTML instead of TEXT.', 'f', 'f', '2014-06-23 18:37:04.490990', '2014-06-23 18:37:04.490990')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "tasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (27, '<code>[C]</code> Update database defaults for complete and archived', 'Currently, the <code>complete</code> and <code>archived</code> task attributes have no default. Update the database such that complete and archived default to false and disallow null values.', 'f', 'f', '2014-06-23 18:37:04.493476', '2014-06-23 18:37:04.493476')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "tasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (28, '<code>[C]</code> Fix issues with task searching', 'The task search feature doesn''t operate properly. Figure out why and fix it if possible.', 'f', 'f', '2014-06-23 18:37:04.496661', '2014-06-23 18:37:04.496661')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "tasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (29, '<code>[C]</code> Add multi-user support', '<b>This task is only asking for the appropriate models and migrations. No View or Controller code modification is necessary.</b> Add a <code>User</code> model and update the <code>Task</code> model so that a <code>User</code> can have many (0-N) <code>Tasks</code> associated.', 'f', 'f', '2014-06-23 18:37:04.499199', '2014-06-23 18:37:04.499199')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "tasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (30, '<code>[D]</code> Add Twitter integration', 'Add API support for Twitter. Have it post the title as the tweet body when a task is completed.<br/><br/>e.g.,<code>''Add complete support'' was marked complete.</code><br/><br/>Use environment variables to store the required Twitter certificates and user information.', 'f', 'f', '2014-06-23 18:37:04.502016', '2014-06-23 18:37:04.502016')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "tasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (31, '<code>[D]</code> Add ListWise integration', '<a href="http://www.listwisehq.com/support/support_detail.php?cat=API+Docs&title=Making+an+API+Call">ListWise</a> is an email cleaning service with a very straightforward API. Write a Ruby <code>Module</code> to check a given email against their <code>quick-clean</code> service. <br/><br/>Use environment variables to store the required keys and user information.', 'f', 'f', '2014-06-23 18:37:04.504966', '2014-06-23 18:37:04.504966')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "tasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (32, '<code>[D]</code> Add Google Maps integration', '<a href="/maps">This page (/maps)</a> is currently blank. Update the View and Javascript/CoffeeScript files as necessary to display the listed GPS coordinates on a map with "visited" coordinates in <b><font color="red">red</font></b>, "revisit needed" in <b><font color="orange">orange</font></b>, and "never visited" in <b><font color="green">green</font></b>.', 'f', 'f', '2014-06-23 18:37:04.508532', '2014-06-23 18:37:04.508532')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "tasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (33, '<code>[E]</code> Code analysis: <code>Task</code>', 'The <code>Task</code> model has several autogenerated methods. What are they and what do they do?<br/><br/>Put your answers under the appropriate question in <a href="/readme">the ''Section E'' Markdown Document (./section_E.md)</a>.', 'f', 'f', '2014-06-23 18:37:04.511303', '2014-06-23 18:37:04.511303')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "tasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (34, '<code>[E]</code> Server config: <code>RabbitMQ</code>', 'See <a href="/readme">the ''Section E'' Markdown Document (./section_E.md)</a> for details.', 'f', 'f', '2014-06-23 18:37:04.514257', '2014-06-23 18:37:04.514257')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "tasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (35, '<code>[E]</code> Testing: <code>Docs Controller</code>', 'Write a simple set of controllers tests for the Docs controller.', 'f', 'f', '2014-06-23 18:37:04.517255', '2014-06-23 18:37:04.517255')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "tasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (36, '<code>[E]</code> Code Review: <code>Docs Controller</code>', 'Do a code review on the Docs controller and its associated views, tests, and routes.<br/><br/>Place comments on aspects infront of code that you would question or address in a code review. Start each review comment with <code>### REVIEW: [your comment here]</code> to make it easy to find. Be yourself! This question has only shades of grey: there is no <b>right</b> answer. <a href="/readme">(See the ''Section E'' Markdown Document [./section_E.md] for more details.)</a>', 'f', 'f', '2014-06-23 18:37:04.520082', '2014-06-23 18:37:04.520082')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "tasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (37, 'Submit Your Answers!', 'Woot. You''re done. To submit your answers, create a free public account on Github or Bitbucket, push your changes to a public repository, and email the repository''s HTTP URL to <a href="mailto:terry@prospectwise.com">terry@prospectwise.com</a>.
+<br/>
+<br/>
+<b>DO NOT ISSUE A PULL REQUEST</b> or <b>FORK</b> this repository. Other people will then be able to use your answers.
+', 'f', 'f', '2014-06-23 18:37:04.522807', '2014-06-23 18:37:04.522807')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "tasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (38, 'new task', 'dummy description', NULL, NULL, '2014-06-28 06:22:51.701859', '2014-06-28 06:22:51.701859')[0m
+SQLite3::ConstraintException: tasks.complete may not be NULL: INSERT INTO "tasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (38, 'new task', 'dummy description', NULL, NULL, '2014-06-28 06:22:51.701859', '2014-06-28 06:22:51.701859')
+  [1m[35m (0.6ms)[0m  rollback transaction
+
+
+Started GET "/tasks" for 127.0.0.1 at 2014-06-28 01:50:11 -0500
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+ActiveRecord::PendingMigrationError (Migrations are pending; run 'bin/rake db:migrate RAILS_ENV=development' to resolve this issue.):
+  activerecord (4.0.5) lib/active_record/migration.rb:383:in `check_pending!'
+  activerecord (4.0.5) lib/active_record/migration.rb:370:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.5) lib/active_support/callbacks.rb:373:in `_run__2280574310931258075__call__callbacks'
+  activesupport (4.0.5) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.5) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.5) lib/rails/engine.rb:511:in `call'
+  railties (4.0.5) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/vikas/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/vikas/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/vikas/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/vikas/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /Users/vikas/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /Users/vikas/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/vikas/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.8ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to SetDefaultValues (20140628063409)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.8ms)[0m  [1mCREATE TEMPORARY TABLE "atasks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "description" text, "complete" boolean, "archived" boolean, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "tasks"
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "atasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (20, '<b>Instructions: Read Carefully!</b>', '<h1>Task List Instructions</h1>
+
+<p>Now that you have properly configured Ruby and Rails on your machine, we have a few challenge questions listed below in this task list.
+<strong>REQUIREMENTS</strong> for completion are listed below.</p>
+
+<ol>
+<li>Complete as many as you can/want to complete, but you <strong>must AT LEAST complete 1 from each task class</strong> (<code>[A]</code>, <code>[B]</code>, <code>[C]</code>, <code>[D]</code>, and <code>[E]</code>). We encourage you to complete as many as you can.</li>
+<li>Clearly mark all modified code with comments indicating the task by title (e.g., <code>### Add archive support</code>).</li>
+<li>Try to complete every challenge question in a single commit and use the task title as the commit message (e.g., <code>Add complete support</code>).</li>
+</ol>
+
+<p>If you can&#39;t get something working, add a comment to the README file or in the source describing what you were trying to do and why you think its not working.
+There is no reason to spend an exorbitant amount of time on any one of these questions. They should be fairly straight-forward. Tasks like these will be frequent.</p>
+
+<p>I recommend doing &#39;Add archive support&#39; first then archiving tasks you don&#39;t want to do. Just make sure you get one from each task class!</p>
+
+<p><strong>Good Luck!</strong></p>
+', 'f', 't', '2014-06-23 18:37:04.474038', '2014-06-26 03:35:19.705556')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "atasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (21, '<code>[A]</code> Add complete support', 'Currently, there is no way for a user to complete a task. Make clicking the check-box complete the task asynchronously.', 'f', 'f', '2014-06-23 18:37:04.478274', '2014-06-28 00:03:11.062783')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "atasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (22, '<code>[A]</code> Add archive support', 'Currently, there is no way for a user to archive a task. Make clicking the archive button archive the task (does not have to be asynchronous).', 't', 'f', '2014-06-23 18:37:04.480916', '2014-06-27 23:13:54.233951')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "atasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (23, '<code>[B]</code> Style completed tasks', 'Tasks even when completed are shown. Style the completed tasks such that it is instantly evident that they are completed.', 't', 'f', '2014-06-23 18:37:04.483457', '2014-06-28 01:11:52.068071')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "atasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (24, '<code>[B]</code> Center ''Archived Tasks'' button', 'The ''View Archived Tasks'' is currently not centered in the <code>.panel-heading</code> div. Update styles as needed to perfectly center the button vertically in the heading div.', 'f', 'f', '2014-06-23 18:37:04.486018', '2014-06-23 18:37:04.486018')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "atasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (25, '<code>[B]</code> Style buttons', 'The buttons to the right of the task table are a bit jumbled. Update styles so that they are on the same line and pleasantly spaced.', 't', 'f', '2014-06-23 18:37:04.488527', '2014-06-28 01:13:26.875595')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "atasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (26, '<code>[B]</code> Fix issue where edit view shows HTML as TEXT', 'When editing a task, the task title shows HTML. Update the view to render the HTML as HTML instead of TEXT.', 'f', 'f', '2014-06-23 18:37:04.490990', '2014-06-23 18:37:04.490990')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "atasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (27, '<code>[C]</code> Update database defaults for complete and archived', 'Currently, the <code>complete</code> and <code>archived</code> task attributes have no default. Update the database such that complete and archived default to false and disallow null values.', 'f', 'f', '2014-06-23 18:37:04.493476', '2014-06-23 18:37:04.493476')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "atasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (28, '<code>[C]</code> Fix issues with task searching', 'The task search feature doesn''t operate properly. Figure out why and fix it if possible.', 'f', 'f', '2014-06-23 18:37:04.496661', '2014-06-23 18:37:04.496661')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "atasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (29, '<code>[C]</code> Add multi-user support', '<b>This task is only asking for the appropriate models and migrations. No View or Controller code modification is necessary.</b> Add a <code>User</code> model and update the <code>Task</code> model so that a <code>User</code> can have many (0-N) <code>Tasks</code> associated.', 'f', 'f', '2014-06-23 18:37:04.499199', '2014-06-23 18:37:04.499199')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "atasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (30, '<code>[D]</code> Add Twitter integration', 'Add API support for Twitter. Have it post the title as the tweet body when a task is completed.<br/><br/>e.g.,<code>''Add complete support'' was marked complete.</code><br/><br/>Use environment variables to store the required Twitter certificates and user information.', 'f', 'f', '2014-06-23 18:37:04.502016', '2014-06-23 18:37:04.502016')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "atasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (31, '<code>[D]</code> Add ListWise integration', '<a href="http://www.listwisehq.com/support/support_detail.php?cat=API+Docs&title=Making+an+API+Call">ListWise</a> is an email cleaning service with a very straightforward API. Write a Ruby <code>Module</code> to check a given email against their <code>quick-clean</code> service. <br/><br/>Use environment variables to store the required keys and user information.', 'f', 'f', '2014-06-23 18:37:04.504966', '2014-06-23 18:37:04.504966')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "atasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (32, '<code>[D]</code> Add Google Maps integration', '<a href="/maps">This page (/maps)</a> is currently blank. Update the View and Javascript/CoffeeScript files as necessary to display the listed GPS coordinates on a map with "visited" coordinates in <b><font color="red">red</font></b>, "revisit needed" in <b><font color="orange">orange</font></b>, and "never visited" in <b><font color="green">green</font></b>.', 'f', 'f', '2014-06-23 18:37:04.508532', '2014-06-23 18:37:04.508532')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "atasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (33, '<code>[E]</code> Code analysis: <code>Task</code>', 'The <code>Task</code> model has several autogenerated methods. What are they and what do they do?<br/><br/>Put your answers under the appropriate question in <a href="/readme">the ''Section E'' Markdown Document (./section_E.md)</a>.', 'f', 'f', '2014-06-23 18:37:04.511303', '2014-06-23 18:37:04.511303')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "atasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (34, '<code>[E]</code> Server config: <code>RabbitMQ</code>', 'See <a href="/readme">the ''Section E'' Markdown Document (./section_E.md)</a> for details.', 'f', 'f', '2014-06-23 18:37:04.514257', '2014-06-23 18:37:04.514257')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "atasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (35, '<code>[E]</code> Testing: <code>Docs Controller</code>', 'Write a simple set of controllers tests for the Docs controller.', 'f', 'f', '2014-06-23 18:37:04.517255', '2014-06-23 18:37:04.517255')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "atasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (36, '<code>[E]</code> Code Review: <code>Docs Controller</code>', 'Do a code review on the Docs controller and its associated views, tests, and routes.<br/><br/>Place comments on aspects infront of code that you would question or address in a code review. Start each review comment with <code>### REVIEW: [your comment here]</code> to make it easy to find. Be yourself! This question has only shades of grey: there is no <b>right</b> answer. <a href="/readme">(See the ''Section E'' Markdown Document [./section_E.md] for more details.)</a>', 'f', 'f', '2014-06-23 18:37:04.520082', '2014-06-23 18:37:04.520082')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "atasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (37, 'Submit Your Answers!', 'Woot. You''re done. To submit your answers, create a free public account on Github or Bitbucket, push your changes to a public repository, and email the repository''s HTTP URL to <a href="mailto:terry@prospectwise.com">terry@prospectwise.com</a>.
+<br/>
+<br/>
+<b>DO NOT ISSUE A PULL REQUEST</b> or <b>FORK</b> this repository. Other people will then be able to use your answers.
+', 'f', 'f', '2014-06-23 18:37:04.522807', '2014-06-23 18:37:04.522807')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "atasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (38, 'new task', 'dummy description', NULL, NULL, '2014-06-28 06:22:51.701859', '2014-06-28 06:22:51.701859')[0m
+  [1m[35m (0.2ms)[0m  DROP TABLE "tasks"
+  [1m[36m (0.1ms)[0m  [1mCREATE TABLE "tasks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "description" text, "complete" boolean DEFAULT 'f' NOT NULL, "archived" boolean, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "atasks"
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "tasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (20, '<b>Instructions: Read Carefully!</b>', '<h1>Task List Instructions</h1>
+
+<p>Now that you have properly configured Ruby and Rails on your machine, we have a few challenge questions listed below in this task list.
+<strong>REQUIREMENTS</strong> for completion are listed below.</p>
+
+<ol>
+<li>Complete as many as you can/want to complete, but you <strong>must AT LEAST complete 1 from each task class</strong> (<code>[A]</code>, <code>[B]</code>, <code>[C]</code>, <code>[D]</code>, and <code>[E]</code>). We encourage you to complete as many as you can.</li>
+<li>Clearly mark all modified code with comments indicating the task by title (e.g., <code>### Add archive support</code>).</li>
+<li>Try to complete every challenge question in a single commit and use the task title as the commit message (e.g., <code>Add complete support</code>).</li>
+</ol>
+
+<p>If you can&#39;t get something working, add a comment to the README file or in the source describing what you were trying to do and why you think its not working.
+There is no reason to spend an exorbitant amount of time on any one of these questions. They should be fairly straight-forward. Tasks like these will be frequent.</p>
+
+<p>I recommend doing &#39;Add archive support&#39; first then archiving tasks you don&#39;t want to do. Just make sure you get one from each task class!</p>
+
+<p><strong>Good Luck!</strong></p>
+', 'f', 't', '2014-06-23 18:37:04.474038', '2014-06-26 03:35:19.705556')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "tasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (21, '<code>[A]</code> Add complete support', 'Currently, there is no way for a user to complete a task. Make clicking the check-box complete the task asynchronously.', 'f', 'f', '2014-06-23 18:37:04.478274', '2014-06-28 00:03:11.062783')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "tasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (22, '<code>[A]</code> Add archive support', 'Currently, there is no way for a user to archive a task. Make clicking the archive button archive the task (does not have to be asynchronous).', 't', 'f', '2014-06-23 18:37:04.480916', '2014-06-27 23:13:54.233951')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "tasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (23, '<code>[B]</code> Style completed tasks', 'Tasks even when completed are shown. Style the completed tasks such that it is instantly evident that they are completed.', 't', 'f', '2014-06-23 18:37:04.483457', '2014-06-28 01:11:52.068071')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "tasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (24, '<code>[B]</code> Center ''Archived Tasks'' button', 'The ''View Archived Tasks'' is currently not centered in the <code>.panel-heading</code> div. Update styles as needed to perfectly center the button vertically in the heading div.', 'f', 'f', '2014-06-23 18:37:04.486018', '2014-06-23 18:37:04.486018')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "tasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (25, '<code>[B]</code> Style buttons', 'The buttons to the right of the task table are a bit jumbled. Update styles so that they are on the same line and pleasantly spaced.', 't', 'f', '2014-06-23 18:37:04.488527', '2014-06-28 01:13:26.875595')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "tasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (26, '<code>[B]</code> Fix issue where edit view shows HTML as TEXT', 'When editing a task, the task title shows HTML. Update the view to render the HTML as HTML instead of TEXT.', 'f', 'f', '2014-06-23 18:37:04.490990', '2014-06-23 18:37:04.490990')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "tasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (27, '<code>[C]</code> Update database defaults for complete and archived', 'Currently, the <code>complete</code> and <code>archived</code> task attributes have no default. Update the database such that complete and archived default to false and disallow null values.', 'f', 'f', '2014-06-23 18:37:04.493476', '2014-06-23 18:37:04.493476')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "tasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (28, '<code>[C]</code> Fix issues with task searching', 'The task search feature doesn''t operate properly. Figure out why and fix it if possible.', 'f', 'f', '2014-06-23 18:37:04.496661', '2014-06-23 18:37:04.496661')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "tasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (29, '<code>[C]</code> Add multi-user support', '<b>This task is only asking for the appropriate models and migrations. No View or Controller code modification is necessary.</b> Add a <code>User</code> model and update the <code>Task</code> model so that a <code>User</code> can have many (0-N) <code>Tasks</code> associated.', 'f', 'f', '2014-06-23 18:37:04.499199', '2014-06-23 18:37:04.499199')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "tasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (30, '<code>[D]</code> Add Twitter integration', 'Add API support for Twitter. Have it post the title as the tweet body when a task is completed.<br/><br/>e.g.,<code>''Add complete support'' was marked complete.</code><br/><br/>Use environment variables to store the required Twitter certificates and user information.', 'f', 'f', '2014-06-23 18:37:04.502016', '2014-06-23 18:37:04.502016')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "tasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (31, '<code>[D]</code> Add ListWise integration', '<a href="http://www.listwisehq.com/support/support_detail.php?cat=API+Docs&title=Making+an+API+Call">ListWise</a> is an email cleaning service with a very straightforward API. Write a Ruby <code>Module</code> to check a given email against their <code>quick-clean</code> service. <br/><br/>Use environment variables to store the required keys and user information.', 'f', 'f', '2014-06-23 18:37:04.504966', '2014-06-23 18:37:04.504966')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "tasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (32, '<code>[D]</code> Add Google Maps integration', '<a href="/maps">This page (/maps)</a> is currently blank. Update the View and Javascript/CoffeeScript files as necessary to display the listed GPS coordinates on a map with "visited" coordinates in <b><font color="red">red</font></b>, "revisit needed" in <b><font color="orange">orange</font></b>, and "never visited" in <b><font color="green">green</font></b>.', 'f', 'f', '2014-06-23 18:37:04.508532', '2014-06-23 18:37:04.508532')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "tasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (33, '<code>[E]</code> Code analysis: <code>Task</code>', 'The <code>Task</code> model has several autogenerated methods. What are they and what do they do?<br/><br/>Put your answers under the appropriate question in <a href="/readme">the ''Section E'' Markdown Document (./section_E.md)</a>.', 'f', 'f', '2014-06-23 18:37:04.511303', '2014-06-23 18:37:04.511303')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "tasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (34, '<code>[E]</code> Server config: <code>RabbitMQ</code>', 'See <a href="/readme">the ''Section E'' Markdown Document (./section_E.md)</a> for details.', 'f', 'f', '2014-06-23 18:37:04.514257', '2014-06-23 18:37:04.514257')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "tasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (35, '<code>[E]</code> Testing: <code>Docs Controller</code>', 'Write a simple set of controllers tests for the Docs controller.', 'f', 'f', '2014-06-23 18:37:04.517255', '2014-06-23 18:37:04.517255')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "tasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (36, '<code>[E]</code> Code Review: <code>Docs Controller</code>', 'Do a code review on the Docs controller and its associated views, tests, and routes.<br/><br/>Place comments on aspects infront of code that you would question or address in a code review. Start each review comment with <code>### REVIEW: [your comment here]</code> to make it easy to find. Be yourself! This question has only shades of grey: there is no <b>right</b> answer. <a href="/readme">(See the ''Section E'' Markdown Document [./section_E.md] for more details.)</a>', 'f', 'f', '2014-06-23 18:37:04.520082', '2014-06-23 18:37:04.520082')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "tasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (37, 'Submit Your Answers!', 'Woot. You''re done. To submit your answers, create a free public account on Github or Bitbucket, push your changes to a public repository, and email the repository''s HTTP URL to <a href="mailto:terry@prospectwise.com">terry@prospectwise.com</a>.
+<br/>
+<br/>
+<b>DO NOT ISSUE A PULL REQUEST</b> or <b>FORK</b> this repository. Other people will then be able to use your answers.
+', 'f', 'f', '2014-06-23 18:37:04.522807', '2014-06-23 18:37:04.522807')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "tasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (38, 'new task', 'dummy description', NULL, NULL, '2014-06-28 06:22:51.701859', '2014-06-28 06:22:51.701859')[0m
+SQLite3::ConstraintException: tasks.complete may not be NULL: INSERT INTO "tasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (38, 'new task', 'dummy description', NULL, NULL, '2014-06-28 06:22:51.701859', '2014-06-28 06:22:51.701859')
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[35mSQL (1.7ms)[0m  DELETE FROM "tasks" WHERE "tasks"."id" = 38
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to SetDefaultValues (20140628063409)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.7ms)[0m  [1mCREATE TEMPORARY TABLE "atasks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "description" text, "complete" boolean, "archived" boolean, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.2ms)[0m  SELECT * FROM "tasks"
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "atasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (20, '<b>Instructions: Read Carefully!</b>', '<h1>Task List Instructions</h1>
+
+<p>Now that you have properly configured Ruby and Rails on your machine, we have a few challenge questions listed below in this task list.
+<strong>REQUIREMENTS</strong> for completion are listed below.</p>
+
+<ol>
+<li>Complete as many as you can/want to complete, but you <strong>must AT LEAST complete 1 from each task class</strong> (<code>[A]</code>, <code>[B]</code>, <code>[C]</code>, <code>[D]</code>, and <code>[E]</code>). We encourage you to complete as many as you can.</li>
+<li>Clearly mark all modified code with comments indicating the task by title (e.g., <code>### Add archive support</code>).</li>
+<li>Try to complete every challenge question in a single commit and use the task title as the commit message (e.g., <code>Add complete support</code>).</li>
+</ol>
+
+<p>If you can&#39;t get something working, add a comment to the README file or in the source describing what you were trying to do and why you think its not working.
+There is no reason to spend an exorbitant amount of time on any one of these questions. They should be fairly straight-forward. Tasks like these will be frequent.</p>
+
+<p>I recommend doing &#39;Add archive support&#39; first then archiving tasks you don&#39;t want to do. Just make sure you get one from each task class!</p>
+
+<p><strong>Good Luck!</strong></p>
+', 'f', 't', '2014-06-23 18:37:04.474038', '2014-06-26 03:35:19.705556')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "atasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (21, '<code>[A]</code> Add complete support', 'Currently, there is no way for a user to complete a task. Make clicking the check-box complete the task asynchronously.', 'f', 'f', '2014-06-23 18:37:04.478274', '2014-06-28 00:03:11.062783')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "atasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (22, '<code>[A]</code> Add archive support', 'Currently, there is no way for a user to archive a task. Make clicking the archive button archive the task (does not have to be asynchronous).', 't', 'f', '2014-06-23 18:37:04.480916', '2014-06-27 23:13:54.233951')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "atasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (23, '<code>[B]</code> Style completed tasks', 'Tasks even when completed are shown. Style the completed tasks such that it is instantly evident that they are completed.', 't', 'f', '2014-06-23 18:37:04.483457', '2014-06-28 01:11:52.068071')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "atasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (24, '<code>[B]</code> Center ''Archived Tasks'' button', 'The ''View Archived Tasks'' is currently not centered in the <code>.panel-heading</code> div. Update styles as needed to perfectly center the button vertically in the heading div.', 'f', 'f', '2014-06-23 18:37:04.486018', '2014-06-23 18:37:04.486018')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "atasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (25, '<code>[B]</code> Style buttons', 'The buttons to the right of the task table are a bit jumbled. Update styles so that they are on the same line and pleasantly spaced.', 't', 'f', '2014-06-23 18:37:04.488527', '2014-06-28 01:13:26.875595')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "atasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (26, '<code>[B]</code> Fix issue where edit view shows HTML as TEXT', 'When editing a task, the task title shows HTML. Update the view to render the HTML as HTML instead of TEXT.', 'f', 'f', '2014-06-23 18:37:04.490990', '2014-06-23 18:37:04.490990')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "atasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (27, '<code>[C]</code> Update database defaults for complete and archived', 'Currently, the <code>complete</code> and <code>archived</code> task attributes have no default. Update the database such that complete and archived default to false and disallow null values.', 'f', 'f', '2014-06-23 18:37:04.493476', '2014-06-23 18:37:04.493476')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "atasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (28, '<code>[C]</code> Fix issues with task searching', 'The task search feature doesn''t operate properly. Figure out why and fix it if possible.', 'f', 'f', '2014-06-23 18:37:04.496661', '2014-06-23 18:37:04.496661')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "atasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (29, '<code>[C]</code> Add multi-user support', '<b>This task is only asking for the appropriate models and migrations. No View or Controller code modification is necessary.</b> Add a <code>User</code> model and update the <code>Task</code> model so that a <code>User</code> can have many (0-N) <code>Tasks</code> associated.', 'f', 'f', '2014-06-23 18:37:04.499199', '2014-06-23 18:37:04.499199')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "atasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (30, '<code>[D]</code> Add Twitter integration', 'Add API support for Twitter. Have it post the title as the tweet body when a task is completed.<br/><br/>e.g.,<code>''Add complete support'' was marked complete.</code><br/><br/>Use environment variables to store the required Twitter certificates and user information.', 'f', 'f', '2014-06-23 18:37:04.502016', '2014-06-23 18:37:04.502016')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "atasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (31, '<code>[D]</code> Add ListWise integration', '<a href="http://www.listwisehq.com/support/support_detail.php?cat=API+Docs&title=Making+an+API+Call">ListWise</a> is an email cleaning service with a very straightforward API. Write a Ruby <code>Module</code> to check a given email against their <code>quick-clean</code> service. <br/><br/>Use environment variables to store the required keys and user information.', 'f', 'f', '2014-06-23 18:37:04.504966', '2014-06-23 18:37:04.504966')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "atasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (32, '<code>[D]</code> Add Google Maps integration', '<a href="/maps">This page (/maps)</a> is currently blank. Update the View and Javascript/CoffeeScript files as necessary to display the listed GPS coordinates on a map with "visited" coordinates in <b><font color="red">red</font></b>, "revisit needed" in <b><font color="orange">orange</font></b>, and "never visited" in <b><font color="green">green</font></b>.', 'f', 'f', '2014-06-23 18:37:04.508532', '2014-06-23 18:37:04.508532')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "atasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (33, '<code>[E]</code> Code analysis: <code>Task</code>', 'The <code>Task</code> model has several autogenerated methods. What are they and what do they do?<br/><br/>Put your answers under the appropriate question in <a href="/readme">the ''Section E'' Markdown Document (./section_E.md)</a>.', 'f', 'f', '2014-06-23 18:37:04.511303', '2014-06-23 18:37:04.511303')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "atasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (34, '<code>[E]</code> Server config: <code>RabbitMQ</code>', 'See <a href="/readme">the ''Section E'' Markdown Document (./section_E.md)</a> for details.', 'f', 'f', '2014-06-23 18:37:04.514257', '2014-06-23 18:37:04.514257')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "atasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (35, '<code>[E]</code> Testing: <code>Docs Controller</code>', 'Write a simple set of controllers tests for the Docs controller.', 'f', 'f', '2014-06-23 18:37:04.517255', '2014-06-23 18:37:04.517255')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "atasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (36, '<code>[E]</code> Code Review: <code>Docs Controller</code>', 'Do a code review on the Docs controller and its associated views, tests, and routes.<br/><br/>Place comments on aspects infront of code that you would question or address in a code review. Start each review comment with <code>### REVIEW: [your comment here]</code> to make it easy to find. Be yourself! This question has only shades of grey: there is no <b>right</b> answer. <a href="/readme">(See the ''Section E'' Markdown Document [./section_E.md] for more details.)</a>', 'f', 'f', '2014-06-23 18:37:04.520082', '2014-06-23 18:37:04.520082')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "atasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (37, 'Submit Your Answers!', 'Woot. You''re done. To submit your answers, create a free public account on Github or Bitbucket, push your changes to a public repository, and email the repository''s HTTP URL to <a href="mailto:terry@prospectwise.com">terry@prospectwise.com</a>.
+<br/>
+<br/>
+<b>DO NOT ISSUE A PULL REQUEST</b> or <b>FORK</b> this repository. Other people will then be able to use your answers.
+', 'f', 'f', '2014-06-23 18:37:04.522807', '2014-06-23 18:37:04.522807')
+  [1m[36m (0.2ms)[0m  [1mDROP TABLE "tasks"[0m
+  [1m[35m (0.1ms)[0m  CREATE TABLE "tasks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "description" text, "complete" boolean DEFAULT 'f' NOT NULL, "archived" boolean, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "atasks"[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "tasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (20, '<b>Instructions: Read Carefully!</b>', '<h1>Task List Instructions</h1>
+
+<p>Now that you have properly configured Ruby and Rails on your machine, we have a few challenge questions listed below in this task list.
+<strong>REQUIREMENTS</strong> for completion are listed below.</p>
+
+<ol>
+<li>Complete as many as you can/want to complete, but you <strong>must AT LEAST complete 1 from each task class</strong> (<code>[A]</code>, <code>[B]</code>, <code>[C]</code>, <code>[D]</code>, and <code>[E]</code>). We encourage you to complete as many as you can.</li>
+<li>Clearly mark all modified code with comments indicating the task by title (e.g., <code>### Add archive support</code>).</li>
+<li>Try to complete every challenge question in a single commit and use the task title as the commit message (e.g., <code>Add complete support</code>).</li>
+</ol>
+
+<p>If you can&#39;t get something working, add a comment to the README file or in the source describing what you were trying to do and why you think its not working.
+There is no reason to spend an exorbitant amount of time on any one of these questions. They should be fairly straight-forward. Tasks like these will be frequent.</p>
+
+<p>I recommend doing &#39;Add archive support&#39; first then archiving tasks you don&#39;t want to do. Just make sure you get one from each task class!</p>
+
+<p><strong>Good Luck!</strong></p>
+', 'f', 't', '2014-06-23 18:37:04.474038', '2014-06-26 03:35:19.705556')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "tasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (21, '<code>[A]</code> Add complete support', 'Currently, there is no way for a user to complete a task. Make clicking the check-box complete the task asynchronously.', 'f', 'f', '2014-06-23 18:37:04.478274', '2014-06-28 00:03:11.062783')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "tasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (22, '<code>[A]</code> Add archive support', 'Currently, there is no way for a user to archive a task. Make clicking the archive button archive the task (does not have to be asynchronous).', 't', 'f', '2014-06-23 18:37:04.480916', '2014-06-27 23:13:54.233951')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "tasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (23, '<code>[B]</code> Style completed tasks', 'Tasks even when completed are shown. Style the completed tasks such that it is instantly evident that they are completed.', 't', 'f', '2014-06-23 18:37:04.483457', '2014-06-28 01:11:52.068071')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "tasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (24, '<code>[B]</code> Center ''Archived Tasks'' button', 'The ''View Archived Tasks'' is currently not centered in the <code>.panel-heading</code> div. Update styles as needed to perfectly center the button vertically in the heading div.', 'f', 'f', '2014-06-23 18:37:04.486018', '2014-06-23 18:37:04.486018')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "tasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (25, '<code>[B]</code> Style buttons', 'The buttons to the right of the task table are a bit jumbled. Update styles so that they are on the same line and pleasantly spaced.', 't', 'f', '2014-06-23 18:37:04.488527', '2014-06-28 01:13:26.875595')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "tasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (26, '<code>[B]</code> Fix issue where edit view shows HTML as TEXT', 'When editing a task, the task title shows HTML. Update the view to render the HTML as HTML instead of TEXT.', 'f', 'f', '2014-06-23 18:37:04.490990', '2014-06-23 18:37:04.490990')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "tasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (27, '<code>[C]</code> Update database defaults for complete and archived', 'Currently, the <code>complete</code> and <code>archived</code> task attributes have no default. Update the database such that complete and archived default to false and disallow null values.', 'f', 'f', '2014-06-23 18:37:04.493476', '2014-06-23 18:37:04.493476')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "tasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (28, '<code>[C]</code> Fix issues with task searching', 'The task search feature doesn''t operate properly. Figure out why and fix it if possible.', 'f', 'f', '2014-06-23 18:37:04.496661', '2014-06-23 18:37:04.496661')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "tasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (29, '<code>[C]</code> Add multi-user support', '<b>This task is only asking for the appropriate models and migrations. No View or Controller code modification is necessary.</b> Add a <code>User</code> model and update the <code>Task</code> model so that a <code>User</code> can have many (0-N) <code>Tasks</code> associated.', 'f', 'f', '2014-06-23 18:37:04.499199', '2014-06-23 18:37:04.499199')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "tasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (30, '<code>[D]</code> Add Twitter integration', 'Add API support for Twitter. Have it post the title as the tweet body when a task is completed.<br/><br/>e.g.,<code>''Add complete support'' was marked complete.</code><br/><br/>Use environment variables to store the required Twitter certificates and user information.', 'f', 'f', '2014-06-23 18:37:04.502016', '2014-06-23 18:37:04.502016')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "tasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (31, '<code>[D]</code> Add ListWise integration', '<a href="http://www.listwisehq.com/support/support_detail.php?cat=API+Docs&title=Making+an+API+Call">ListWise</a> is an email cleaning service with a very straightforward API. Write a Ruby <code>Module</code> to check a given email against their <code>quick-clean</code> service. <br/><br/>Use environment variables to store the required keys and user information.', 'f', 'f', '2014-06-23 18:37:04.504966', '2014-06-23 18:37:04.504966')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "tasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (32, '<code>[D]</code> Add Google Maps integration', '<a href="/maps">This page (/maps)</a> is currently blank. Update the View and Javascript/CoffeeScript files as necessary to display the listed GPS coordinates on a map with "visited" coordinates in <b><font color="red">red</font></b>, "revisit needed" in <b><font color="orange">orange</font></b>, and "never visited" in <b><font color="green">green</font></b>.', 'f', 'f', '2014-06-23 18:37:04.508532', '2014-06-23 18:37:04.508532')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "tasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (33, '<code>[E]</code> Code analysis: <code>Task</code>', 'The <code>Task</code> model has several autogenerated methods. What are they and what do they do?<br/><br/>Put your answers under the appropriate question in <a href="/readme">the ''Section E'' Markdown Document (./section_E.md)</a>.', 'f', 'f', '2014-06-23 18:37:04.511303', '2014-06-23 18:37:04.511303')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "tasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (34, '<code>[E]</code> Server config: <code>RabbitMQ</code>', 'See <a href="/readme">the ''Section E'' Markdown Document (./section_E.md)</a> for details.', 'f', 'f', '2014-06-23 18:37:04.514257', '2014-06-23 18:37:04.514257')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "tasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (35, '<code>[E]</code> Testing: <code>Docs Controller</code>', 'Write a simple set of controllers tests for the Docs controller.', 'f', 'f', '2014-06-23 18:37:04.517255', '2014-06-23 18:37:04.517255')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "tasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (36, '<code>[E]</code> Code Review: <code>Docs Controller</code>', 'Do a code review on the Docs controller and its associated views, tests, and routes.<br/><br/>Place comments on aspects infront of code that you would question or address in a code review. Start each review comment with <code>### REVIEW: [your comment here]</code> to make it easy to find. Be yourself! This question has only shades of grey: there is no <b>right</b> answer. <a href="/readme">(See the ''Section E'' Markdown Document [./section_E.md] for more details.)</a>', 'f', 'f', '2014-06-23 18:37:04.520082', '2014-06-23 18:37:04.520082')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "tasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (37, 'Submit Your Answers!', 'Woot. You''re done. To submit your answers, create a free public account on Github or Bitbucket, push your changes to a public repository, and email the repository''s HTTP URL to <a href="mailto:terry@prospectwise.com">terry@prospectwise.com</a>.
+<br/>
+<br/>
+<b>DO NOT ISSUE A PULL REQUEST</b> or <b>FORK</b> this repository. Other people will then be able to use your answers.
+', 'f', 'f', '2014-06-23 18:37:04.522807', '2014-06-23 18:37:04.522807')[0m
+  [1m[35m (0.2ms)[0m  DROP TABLE "atasks"
+  [1m[36m (0.1ms)[0m  [1mCREATE TEMPORARY TABLE "atasks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "description" text, "complete" boolean DEFAULT 'f' NOT NULL, "archived" boolean, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "tasks"
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "atasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (20, '<b>Instructions: Read Carefully!</b>', '<h1>Task List Instructions</h1>
+
+<p>Now that you have properly configured Ruby and Rails on your machine, we have a few challenge questions listed below in this task list.
+<strong>REQUIREMENTS</strong> for completion are listed below.</p>
+
+<ol>
+<li>Complete as many as you can/want to complete, but you <strong>must AT LEAST complete 1 from each task class</strong> (<code>[A]</code>, <code>[B]</code>, <code>[C]</code>, <code>[D]</code>, and <code>[E]</code>). We encourage you to complete as many as you can.</li>
+<li>Clearly mark all modified code with comments indicating the task by title (e.g., <code>### Add archive support</code>).</li>
+<li>Try to complete every challenge question in a single commit and use the task title as the commit message (e.g., <code>Add complete support</code>).</li>
+</ol>
+
+<p>If you can&#39;t get something working, add a comment to the README file or in the source describing what you were trying to do and why you think its not working.
+There is no reason to spend an exorbitant amount of time on any one of these questions. They should be fairly straight-forward. Tasks like these will be frequent.</p>
+
+<p>I recommend doing &#39;Add archive support&#39; first then archiving tasks you don&#39;t want to do. Just make sure you get one from each task class!</p>
+
+<p><strong>Good Luck!</strong></p>
+', 'f', 't', '2014-06-23 18:37:04.474038', '2014-06-26 03:35:19.705556')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "atasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (21, '<code>[A]</code> Add complete support', 'Currently, there is no way for a user to complete a task. Make clicking the check-box complete the task asynchronously.', 'f', 'f', '2014-06-23 18:37:04.478274', '2014-06-28 00:03:11.062783')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "atasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (22, '<code>[A]</code> Add archive support', 'Currently, there is no way for a user to archive a task. Make clicking the archive button archive the task (does not have to be asynchronous).', 't', 'f', '2014-06-23 18:37:04.480916', '2014-06-27 23:13:54.233951')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "atasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (23, '<code>[B]</code> Style completed tasks', 'Tasks even when completed are shown. Style the completed tasks such that it is instantly evident that they are completed.', 't', 'f', '2014-06-23 18:37:04.483457', '2014-06-28 01:11:52.068071')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "atasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (24, '<code>[B]</code> Center ''Archived Tasks'' button', 'The ''View Archived Tasks'' is currently not centered in the <code>.panel-heading</code> div. Update styles as needed to perfectly center the button vertically in the heading div.', 'f', 'f', '2014-06-23 18:37:04.486018', '2014-06-23 18:37:04.486018')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "atasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (25, '<code>[B]</code> Style buttons', 'The buttons to the right of the task table are a bit jumbled. Update styles so that they are on the same line and pleasantly spaced.', 't', 'f', '2014-06-23 18:37:04.488527', '2014-06-28 01:13:26.875595')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "atasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (26, '<code>[B]</code> Fix issue where edit view shows HTML as TEXT', 'When editing a task, the task title shows HTML. Update the view to render the HTML as HTML instead of TEXT.', 'f', 'f', '2014-06-23 18:37:04.490990', '2014-06-23 18:37:04.490990')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "atasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (27, '<code>[C]</code> Update database defaults for complete and archived', 'Currently, the <code>complete</code> and <code>archived</code> task attributes have no default. Update the database such that complete and archived default to false and disallow null values.', 'f', 'f', '2014-06-23 18:37:04.493476', '2014-06-23 18:37:04.493476')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "atasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (28, '<code>[C]</code> Fix issues with task searching', 'The task search feature doesn''t operate properly. Figure out why and fix it if possible.', 'f', 'f', '2014-06-23 18:37:04.496661', '2014-06-23 18:37:04.496661')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "atasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (29, '<code>[C]</code> Add multi-user support', '<b>This task is only asking for the appropriate models and migrations. No View or Controller code modification is necessary.</b> Add a <code>User</code> model and update the <code>Task</code> model so that a <code>User</code> can have many (0-N) <code>Tasks</code> associated.', 'f', 'f', '2014-06-23 18:37:04.499199', '2014-06-23 18:37:04.499199')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "atasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (30, '<code>[D]</code> Add Twitter integration', 'Add API support for Twitter. Have it post the title as the tweet body when a task is completed.<br/><br/>e.g.,<code>''Add complete support'' was marked complete.</code><br/><br/>Use environment variables to store the required Twitter certificates and user information.', 'f', 'f', '2014-06-23 18:37:04.502016', '2014-06-23 18:37:04.502016')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "atasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (31, '<code>[D]</code> Add ListWise integration', '<a href="http://www.listwisehq.com/support/support_detail.php?cat=API+Docs&title=Making+an+API+Call">ListWise</a> is an email cleaning service with a very straightforward API. Write a Ruby <code>Module</code> to check a given email against their <code>quick-clean</code> service. <br/><br/>Use environment variables to store the required keys and user information.', 'f', 'f', '2014-06-23 18:37:04.504966', '2014-06-23 18:37:04.504966')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "atasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (32, '<code>[D]</code> Add Google Maps integration', '<a href="/maps">This page (/maps)</a> is currently blank. Update the View and Javascript/CoffeeScript files as necessary to display the listed GPS coordinates on a map with "visited" coordinates in <b><font color="red">red</font></b>, "revisit needed" in <b><font color="orange">orange</font></b>, and "never visited" in <b><font color="green">green</font></b>.', 'f', 'f', '2014-06-23 18:37:04.508532', '2014-06-23 18:37:04.508532')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "atasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (33, '<code>[E]</code> Code analysis: <code>Task</code>', 'The <code>Task</code> model has several autogenerated methods. What are they and what do they do?<br/><br/>Put your answers under the appropriate question in <a href="/readme">the ''Section E'' Markdown Document (./section_E.md)</a>.', 'f', 'f', '2014-06-23 18:37:04.511303', '2014-06-23 18:37:04.511303')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "atasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (34, '<code>[E]</code> Server config: <code>RabbitMQ</code>', 'See <a href="/readme">the ''Section E'' Markdown Document (./section_E.md)</a> for details.', 'f', 'f', '2014-06-23 18:37:04.514257', '2014-06-23 18:37:04.514257')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "atasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (35, '<code>[E]</code> Testing: <code>Docs Controller</code>', 'Write a simple set of controllers tests for the Docs controller.', 'f', 'f', '2014-06-23 18:37:04.517255', '2014-06-23 18:37:04.517255')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "atasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (36, '<code>[E]</code> Code Review: <code>Docs Controller</code>', 'Do a code review on the Docs controller and its associated views, tests, and routes.<br/><br/>Place comments on aspects infront of code that you would question or address in a code review. Start each review comment with <code>### REVIEW: [your comment here]</code> to make it easy to find. Be yourself! This question has only shades of grey: there is no <b>right</b> answer. <a href="/readme">(See the ''Section E'' Markdown Document [./section_E.md] for more details.)</a>', 'f', 'f', '2014-06-23 18:37:04.520082', '2014-06-23 18:37:04.520082')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "atasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (37, 'Submit Your Answers!', 'Woot. You''re done. To submit your answers, create a free public account on Github or Bitbucket, push your changes to a public repository, and email the repository''s HTTP URL to <a href="mailto:terry@prospectwise.com">terry@prospectwise.com</a>.
+<br/>
+<br/>
+<b>DO NOT ISSUE A PULL REQUEST</b> or <b>FORK</b> this repository. Other people will then be able to use your answers.
+', 'f', 'f', '2014-06-23 18:37:04.522807', '2014-06-23 18:37:04.522807')
+  [1m[36m (0.2ms)[0m  [1mDROP TABLE "tasks"[0m
+  [1m[35m (0.1ms)[0m  CREATE TABLE "tasks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "description" text, "complete" boolean DEFAULT 'f' NOT NULL, "archived" boolean DEFAULT 'f' NOT NULL, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "atasks"[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "tasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (20, '<b>Instructions: Read Carefully!</b>', '<h1>Task List Instructions</h1>
+
+<p>Now that you have properly configured Ruby and Rails on your machine, we have a few challenge questions listed below in this task list.
+<strong>REQUIREMENTS</strong> for completion are listed below.</p>
+
+<ol>
+<li>Complete as many as you can/want to complete, but you <strong>must AT LEAST complete 1 from each task class</strong> (<code>[A]</code>, <code>[B]</code>, <code>[C]</code>, <code>[D]</code>, and <code>[E]</code>). We encourage you to complete as many as you can.</li>
+<li>Clearly mark all modified code with comments indicating the task by title (e.g., <code>### Add archive support</code>).</li>
+<li>Try to complete every challenge question in a single commit and use the task title as the commit message (e.g., <code>Add complete support</code>).</li>
+</ol>
+
+<p>If you can&#39;t get something working, add a comment to the README file or in the source describing what you were trying to do and why you think its not working.
+There is no reason to spend an exorbitant amount of time on any one of these questions. They should be fairly straight-forward. Tasks like these will be frequent.</p>
+
+<p>I recommend doing &#39;Add archive support&#39; first then archiving tasks you don&#39;t want to do. Just make sure you get one from each task class!</p>
+
+<p><strong>Good Luck!</strong></p>
+', 'f', 't', '2014-06-23 18:37:04.474038', '2014-06-26 03:35:19.705556')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "tasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (21, '<code>[A]</code> Add complete support', 'Currently, there is no way for a user to complete a task. Make clicking the check-box complete the task asynchronously.', 'f', 'f', '2014-06-23 18:37:04.478274', '2014-06-28 00:03:11.062783')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "tasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (22, '<code>[A]</code> Add archive support', 'Currently, there is no way for a user to archive a task. Make clicking the archive button archive the task (does not have to be asynchronous).', 't', 'f', '2014-06-23 18:37:04.480916', '2014-06-27 23:13:54.233951')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "tasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (23, '<code>[B]</code> Style completed tasks', 'Tasks even when completed are shown. Style the completed tasks such that it is instantly evident that they are completed.', 't', 'f', '2014-06-23 18:37:04.483457', '2014-06-28 01:11:52.068071')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "tasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (24, '<code>[B]</code> Center ''Archived Tasks'' button', 'The ''View Archived Tasks'' is currently not centered in the <code>.panel-heading</code> div. Update styles as needed to perfectly center the button vertically in the heading div.', 'f', 'f', '2014-06-23 18:37:04.486018', '2014-06-23 18:37:04.486018')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "tasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (25, '<code>[B]</code> Style buttons', 'The buttons to the right of the task table are a bit jumbled. Update styles so that they are on the same line and pleasantly spaced.', 't', 'f', '2014-06-23 18:37:04.488527', '2014-06-28 01:13:26.875595')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "tasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (26, '<code>[B]</code> Fix issue where edit view shows HTML as TEXT', 'When editing a task, the task title shows HTML. Update the view to render the HTML as HTML instead of TEXT.', 'f', 'f', '2014-06-23 18:37:04.490990', '2014-06-23 18:37:04.490990')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "tasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (27, '<code>[C]</code> Update database defaults for complete and archived', 'Currently, the <code>complete</code> and <code>archived</code> task attributes have no default. Update the database such that complete and archived default to false and disallow null values.', 'f', 'f', '2014-06-23 18:37:04.493476', '2014-06-23 18:37:04.493476')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "tasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (28, '<code>[C]</code> Fix issues with task searching', 'The task search feature doesn''t operate properly. Figure out why and fix it if possible.', 'f', 'f', '2014-06-23 18:37:04.496661', '2014-06-23 18:37:04.496661')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "tasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (29, '<code>[C]</code> Add multi-user support', '<b>This task is only asking for the appropriate models and migrations. No View or Controller code modification is necessary.</b> Add a <code>User</code> model and update the <code>Task</code> model so that a <code>User</code> can have many (0-N) <code>Tasks</code> associated.', 'f', 'f', '2014-06-23 18:37:04.499199', '2014-06-23 18:37:04.499199')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "tasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (30, '<code>[D]</code> Add Twitter integration', 'Add API support for Twitter. Have it post the title as the tweet body when a task is completed.<br/><br/>e.g.,<code>''Add complete support'' was marked complete.</code><br/><br/>Use environment variables to store the required Twitter certificates and user information.', 'f', 'f', '2014-06-23 18:37:04.502016', '2014-06-23 18:37:04.502016')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "tasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (31, '<code>[D]</code> Add ListWise integration', '<a href="http://www.listwisehq.com/support/support_detail.php?cat=API+Docs&title=Making+an+API+Call">ListWise</a> is an email cleaning service with a very straightforward API. Write a Ruby <code>Module</code> to check a given email against their <code>quick-clean</code> service. <br/><br/>Use environment variables to store the required keys and user information.', 'f', 'f', '2014-06-23 18:37:04.504966', '2014-06-23 18:37:04.504966')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "tasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (32, '<code>[D]</code> Add Google Maps integration', '<a href="/maps">This page (/maps)</a> is currently blank. Update the View and Javascript/CoffeeScript files as necessary to display the listed GPS coordinates on a map with "visited" coordinates in <b><font color="red">red</font></b>, "revisit needed" in <b><font color="orange">orange</font></b>, and "never visited" in <b><font color="green">green</font></b>.', 'f', 'f', '2014-06-23 18:37:04.508532', '2014-06-23 18:37:04.508532')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "tasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (33, '<code>[E]</code> Code analysis: <code>Task</code>', 'The <code>Task</code> model has several autogenerated methods. What are they and what do they do?<br/><br/>Put your answers under the appropriate question in <a href="/readme">the ''Section E'' Markdown Document (./section_E.md)</a>.', 'f', 'f', '2014-06-23 18:37:04.511303', '2014-06-23 18:37:04.511303')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "tasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (34, '<code>[E]</code> Server config: <code>RabbitMQ</code>', 'See <a href="/readme">the ''Section E'' Markdown Document (./section_E.md)</a> for details.', 'f', 'f', '2014-06-23 18:37:04.514257', '2014-06-23 18:37:04.514257')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "tasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (35, '<code>[E]</code> Testing: <code>Docs Controller</code>', 'Write a simple set of controllers tests for the Docs controller.', 'f', 'f', '2014-06-23 18:37:04.517255', '2014-06-23 18:37:04.517255')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "tasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (36, '<code>[E]</code> Code Review: <code>Docs Controller</code>', 'Do a code review on the Docs controller and its associated views, tests, and routes.<br/><br/>Place comments on aspects infront of code that you would question or address in a code review. Start each review comment with <code>### REVIEW: [your comment here]</code> to make it easy to find. Be yourself! This question has only shades of grey: there is no <b>right</b> answer. <a href="/readme">(See the ''Section E'' Markdown Document [./section_E.md] for more details.)</a>', 'f', 'f', '2014-06-23 18:37:04.520082', '2014-06-23 18:37:04.520082')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "tasks" ("id","title","description","complete","archived","created_at","updated_at") VALUES (37, 'Submit Your Answers!', 'Woot. You''re done. To submit your answers, create a free public account on Github or Bitbucket, push your changes to a public repository, and email the repository''s HTTP URL to <a href="mailto:terry@prospectwise.com">terry@prospectwise.com</a>.
+<br/>
+<br/>
+<b>DO NOT ISSUE A PULL REQUEST</b> or <b>FORK</b> this repository. Other people will then be able to use your answers.
+', 'f', 'f', '2014-06-23 18:37:04.522807', '2014-06-23 18:37:04.522807')[0m
+  [1m[35m (0.1ms)[0m  DROP TABLE "atasks"
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140628063409"]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "tasks" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Sat, 28 Jun 2014 06:56:36 UTC +00:00], ["description", "dummy description"], ["title", "new task"], ["updated_at", Sat, 28 Jun 2014 06:56:36 UTC +00:00]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[35mSQL (1.6ms)[0m  DELETE FROM "tasks" WHERE "tasks"."id" = 38
+
+
+Started GET "/tasks" for 127.0.0.1 at 2014-06-28 02:03:16 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TasksController#index as HTML
+  Parameters: {"exclude"=>[:show]}
+  Rendered tasks/_form.html.erb (5.0ms)
+  Rendered tasks/_search_form.html.erb (0.6ms)
+  [1m[35mTask Load (0.2ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."archived" = 'f'
+  Rendered tasks/index.html.erb within layouts/application (15.3ms)
+Completed 200 OK in 22ms (Views: 20.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-28 02:03:16 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-28 02:03:16 -0500
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2014-06-28 02:03:16 -0500
+
+
+Started GET "/assets/docs.css?body=1" for 127.0.0.1 at 2014-06-28 02:03:16 -0500
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-06-28 02:03:16 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-28 02:03:16 -0500
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-06-28 02:03:16 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-28 02:03:16 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-28 02:03:16 -0500
+
+
+Started GET "/assets/docs.js?body=1" for 127.0.0.1 at 2014-06-28 02:03:16 -0500
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-06-28 02:03:16 -0500
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2014-06-28 02:03:16 -0500
+
+
+Started GET "/assets/maps_javascript.js?body=1" for 127.0.0.1 at 2014-06-28 02:03:16 -0500
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2014-06-28 02:03:16 -0500
+
+
+Started GET "/assets/tasks_javascript.js?body=1" for 127.0.0.1 at 2014-06-28 02:03:16 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-28 02:03:16 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "tasks" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Sat, 28 Jun 2014 07:03:42 UTC +00:00], ["description", "dummy description"], ["title", "new task"], ["updated_at", Sat, 28 Jun 2014 07:03:42 UTC +00:00]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mSQL (1.6ms)[0m  DELETE FROM "tasks" WHERE "tasks"."id" = 39
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
