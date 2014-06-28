@@ -28,6 +28,7 @@
       <table class='table table-striped'>
         <thead>
           <tr>
+            <th style="width:1%"></th>
             <th>Complete</th>
             <th>Task</th>
             <th>Description</th>
@@ -38,15 +39,20 @@
         <tbody>
           <% @tasks.each do |task| %>
             <tr>
-              <!-- ### Add completion support -->
-              <td><%= task.check_box :complete %>
+              <!-- ### Style completed tasks -->
+              <% if task.complete %>
+                <td style="height:100%; background-color:green; overflow:hidden"></td>
+              <% else %>
+                <td style="height:100%; background-color:orange; overflow:hidden"></td>
+              <% end %>
+              <td><%= check_box_tag :complete, :complete, task.complete, onclick: 'javascript:alert("Make me work!");' %>
               <td><%= task.title.html_safe %></td>
               <td><%= task.description.html_safe %></td>
               <!-- ### Style buttons --> 
               <td><%= link_to 'Edit', edit_task_path(task), class: 'btn btn-default btn-sm' -%></td>
               <td><%= link_to 'Destroy', task, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger btn-sm' -%></td>
                 <!-- ### Add archive support -->
-              <td><%= link_to 'Archive', archive_task_path(task), method: :put, class: 'btn btn-warning btn-sm' -%></td>
+              <td><%= link_to 'Archive', archive_path(task), method: :put, class: 'btn btn-warning btn-sm' -%></td>
             </tr>
           <% end %>
         </tbody>
