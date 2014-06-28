@@ -13718,3 +13718,245 @@ Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-28 02:03:16
   [1m[35mSQL (1.6ms)[0m  DELETE FROM "tasks" WHERE "tasks"."id" = 39
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
   [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/tasks/27/edit" for 127.0.0.1 at 2014-06-28 02:08:47 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TasksController#edit as HTML
+  Parameters: {"exclude"=>[:show], "id"=>"27"}
+  [1m[35mTask Load (0.1ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT 1  [["id", "27"]]
+  Rendered tasks/_form.html.erb (2.5ms)
+  Rendered tasks/edit.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 15ms (Views: 9.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tasks/27/edit" for 127.0.0.1 at 2014-06-28 02:09:21 -0500
+Processing by TasksController#edit as HTML
+  Parameters: {"exclude"=>[:show], "id"=>"27"}
+  [1m[36mTask Load (0.1ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", "27"]]
+  Rendered tasks/_form.html.erb (1.9ms)
+  Rendered tasks/edit.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/tasks/27" for 127.0.0.1 at 2014-06-28 02:09:26 -0500
+Processing by TasksController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9mpJ6I1ols6XZkzffv3sMmTyGwGUUYJNnqc+ZLE8c4E=", "task"=>{"complete"=>"1", "archived"=>"0", "title"=>"<code>[C]</code> Update database defaults for complete and archived", "description"=>"Currently, the <code>complete</code> and <code>archived</code> task attributes have no default.  Update the database such that complete and archived default to false and disallow null values."}, "commit"=>"Update Task", "exclude"=>[:show], "id"=>"27"}
+  [1m[35mTask Load (0.1ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT 1  [["id", "27"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "tasks" SET "complete" = ?, "updated_at" = ? WHERE "tasks"."id" = 27  [["complete", true], ["updated_at", Sat, 28 Jun 2014 07:09:26 UTC +00:00]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/tasks
+Completed 302 Found in 4ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2014-06-28 02:09:26 -0500
+Processing by TasksController#index as HTML
+  Parameters: {"exclude"=>[:show]}
+  Rendered tasks/_form.html.erb (1.5ms)
+  Rendered tasks/_search_form.html.erb (0.4ms)
+  [1m[35mTask Load (0.2ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."archived" = 'f'
+  Rendered tasks/index.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 18ms (Views: 17.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-28 02:09:26 -0500
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-06-28 02:09:26 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-28 02:09:26 -0500
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-06-28 02:09:26 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-28 02:09:26 -0500
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2014-06-28 02:09:26 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-28 02:09:26 -0500
+
+
+Started GET "/assets/docs.css?body=1" for 127.0.0.1 at 2014-06-28 02:09:26 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-28 02:09:26 -0500
+
+
+Started GET "/assets/docs.js?body=1" for 127.0.0.1 at 2014-06-28 02:09:26 -0500
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2014-06-28 02:09:26 -0500
+
+
+Started GET "/assets/maps_javascript.js?body=1" for 127.0.0.1 at 2014-06-28 02:09:26 -0500
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-06-28 02:09:26 -0500
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2014-06-28 02:09:26 -0500
+
+
+Started GET "/assets/tasks_javascript.js?body=1" for 127.0.0.1 at 2014-06-28 02:09:26 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-28 02:09:26 -0500
+
+
+Started GET "/tasks/26/edit" for 127.0.0.1 at 2014-06-28 02:09:35 -0500
+Processing by TasksController#edit as HTML
+  Parameters: {"exclude"=>[:show], "id"=>"26"}
+  [1m[36mTask Load (0.1ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", "26"]]
+  Rendered tasks/_form.html.erb (2.0ms)
+  Rendered tasks/edit.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/tasks/26/edit" for 127.0.0.1 at 2014-06-28 02:12:56 -0500
+Processing by TasksController#edit as HTML
+  Parameters: {"exclude"=>[:show], "id"=>"26"}
+  [1m[35mTask Load (0.1ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT 1  [["id", "26"]]
+  Rendered tasks/_form.html.erb (1.9ms)
+  Rendered tasks/edit.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-28 02:12:56 -0500
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-06-28 02:12:56 -0500
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2014-06-28 02:12:56 -0500
+
+
+Started GET "/assets/docs.css?body=1" for 127.0.0.1 at 2014-06-28 02:12:56 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-28 02:12:56 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-28 02:12:56 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-28 02:12:56 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-28 02:12:56 -0500
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-06-28 02:12:56 -0500
+
+
+Started GET "/assets/docs.js?body=1" for 127.0.0.1 at 2014-06-28 02:12:56 -0500
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-06-28 02:12:56 -0500
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2014-06-28 02:12:56 -0500
+
+
+Started GET "/assets/maps_javascript.js?body=1" for 127.0.0.1 at 2014-06-28 02:12:56 -0500
+
+
+Started GET "/assets/tasks_javascript.js?body=1" for 127.0.0.1 at 2014-06-28 02:12:56 -0500
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2014-06-28 02:12:56 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-28 02:12:56 -0500
+
+
+Started PATCH "/tasks/26" for 127.0.0.1 at 2014-06-28 02:13:01 -0500
+Processing by TasksController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9mpJ6I1ols6XZkzffv3sMmTyGwGUUYJNnqc+ZLE8c4E=", "task"=>{"complete"=>"1", "archived"=>"0", "title"=>"<code>[B]</code> Fix issue where edit view shows HTML as TEXT", "description"=>"When editing a task, the task title shows HTML.  Update the view to render the HTML as HTML instead of TEXT."}, "commit"=>"Update Task", "exclude"=>[:show], "id"=>"26"}
+  [1m[36mTask Load (0.1ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", "26"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "tasks" SET "complete" = ?, "updated_at" = ? WHERE "tasks"."id" = 26[0m  [["complete", true], ["updated_at", Sat, 28 Jun 2014 07:13:01 UTC +00:00]]
+  [1m[35m (1.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/tasks
+Completed 302 Found in 4ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2014-06-28 02:13:01 -0500
+Processing by TasksController#index as HTML
+  Parameters: {"exclude"=>[:show]}
+  Rendered tasks/_form.html.erb (1.4ms)
+  Rendered tasks/_search_form.html.erb (0.4ms)
+  [1m[36mTask Load (0.3ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."archived" = 'f'[0m
+  Rendered tasks/index.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 17ms (Views: 15.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2014-06-28 02:13:01 -0500
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-06-28 02:13:01 -0500
+
+
+Started GET "/assets/docs.css?body=1" for 127.0.0.1 at 2014-06-28 02:13:01 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-28 02:13:01 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-28 02:13:01 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-28 02:13:01 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-28 02:13:01 -0500
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-06-28 02:13:01 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-28 02:13:01 -0500
+
+
+Started GET "/assets/docs.js?body=1" for 127.0.0.1 at 2014-06-28 02:13:01 -0500
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-06-28 02:13:01 -0500
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2014-06-28 02:13:01 -0500
+
+
+Started GET "/assets/maps_javascript.js?body=1" for 127.0.0.1 at 2014-06-28 02:13:01 -0500
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2014-06-28 02:13:01 -0500
+
+
+Started GET "/assets/tasks_javascript.js?body=1" for 127.0.0.1 at 2014-06-28 02:13:01 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-28 02:13:01 -0500
+
+
+Started GET "/tasks/21/edit" for 127.0.0.1 at 2014-06-28 02:13:06 -0500
+Processing by TasksController#edit as HTML
+  Parameters: {"exclude"=>[:show], "id"=>"21"}
+  [1m[35mTask Load (0.1ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT 1  [["id", "21"]]
+  Rendered tasks/_form.html.erb (2.0ms)
+  Rendered tasks/edit.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 9ms (Views: 7.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2014-06-28 02:13:09 -0500
+Processing by TasksController#index as HTML
+  Parameters: {"exclude"=>[:show]}
+  Rendered tasks/_form.html.erb (1.5ms)
+  Rendered tasks/_search_form.html.erb (0.5ms)
+  [1m[36mTask Load (0.2ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."archived" = 'f'[0m
+  Rendered tasks/index.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 18ms (Views: 17.1ms | ActiveRecord: 0.1ms)
