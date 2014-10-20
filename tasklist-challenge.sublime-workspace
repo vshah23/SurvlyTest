@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"q",
+				"query"
+			],
+			[
+				"tas",
+				"task"
+			],
+			[
 				"postgresql",
 				"postgresql-ganglia"
 			],
@@ -32,18 +40,50 @@
 	"buffers":
 	[
 		{
-			"file": "app/controllers/application_controller.rb",
+			"file": "Gemfile",
 			"settings":
 			{
-				"buffer_size": 204,
+				"buffer_size": 1395,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "Gemfile",
+			"file": "app/views/tasks/index.html.erb",
 			"settings":
 			{
-				"buffer_size": 1216,
+				"buffer_size": 2166,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "config/routes.rb",
+			"settings":
+			{
+				"buffer_size": 277,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "db/schema.rb",
+			"settings":
+			{
+				"buffer_size": 1012,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/assets/javascripts/index.js",
+			"settings":
+			{
+				"buffer_size": 30,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/models/task.rb",
+			"settings":
+			{
+				"buffer_size": 366,
 				"line_ending": "Unix"
 			}
 		}
@@ -135,12 +175,7 @@
 	},
 	"console":
 	{
-		"height": 126.0,
-		"history":
-		[
-			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
-			"rename"
-		]
+		"height": 126.0
 	},
 	"distraction_free":
 	{
@@ -153,6 +188,17 @@
 	},
 	"file_history":
 	[
+		"/Users/vikas/SurvlyTest/app/controllers/tasks_controller.rb",
+		"/Volumes/root/srv/http/webpage/test.js",
+		"/Users/vikas/Downloads/webpage/test.php",
+		"/Users/vikas/SurvlyTest/db/migrate/20140628063409_set_default_values.rb",
+		"/Users/vikas/SurvlyTest/app/views/tasks/edit.html.erb",
+		"/Users/vikas/SurvlyTest/db/migrate/20140529221905_create_tasks.rb",
+		"/Volumes/root/srv/http/v/test.js",
+		"/Users/vikas/SurvlyTest/app/views/layouts/application.html.erb",
+		"/Users/vikas/SurvlyTest/app/models/task.rb",
+		"/Users/vikas/SurvlyTest/app/controllers/application_controller.rb",
+		"/Users/vikas/SurvlyTest/app/controllers/docs_controller.rb",
 		"/Users/terrymeacham/projects/tasklist-challenge/db/migrate/20140529221905_create_tasks.rb",
 		"/Users/terrymeacham/projects/tasklist-challenge/config/routes.rb",
 		"/Users/terrymeacham/projects/tasklist-challenge/config.ru",
@@ -269,18 +315,7 @@
 		"/Users/terrymeacham/projects/ridoku-cookbooks/unicorn/attributes/default.rb",
 		"/Users/terrymeacham/projects/ridoku-cookbooks/deploy/definitions/opsworks_deploy_dir.rb",
 		"/Users/terrymeacham/projects/ridoku-cookbooks/deploy/definitions/delayed_job_server.rb",
-		"/Users/terrymeacham/projects/ridoku-cookbooks/unicorn/recipes/default.rb",
-		"/Users/terrymeacham/projects/ridoku-cookbooks/deploy/specs/web-undeploy_spec.rb",
-		"/Users/terrymeacham/projects/ridoku-cookbooks/deploy/specs/rails-undeploy_spec.rb",
-		"/Users/terrymeacham/projects/ridoku-cookbooks/deploy/specs/php-undeploy_spec.rb",
-		"/Users/terrymeacham/projects/ridoku-cookbooks/deploy/specs/nodejs-undeploy_spec.rb",
-		"/Users/terrymeacham/projects/ridoku-cookbooks/deploy/recipes/web-undeploy.rb",
-		"/Users/terrymeacham/projects/ridoku-cookbooks/deploy/recipes/rails-undeploy.rb",
-		"/Users/terrymeacham/projects/ridoku-cookbooks/deploy/recipes/php-undeploy.rb",
-		"/Users/terrymeacham/projects/ridoku-cookbooks/deploy/recipes/nodejs-undeploy.rb",
-		"/Users/terrymeacham/projects/ridoku-cookbooks/postgresql/recipes/restore_database.rb",
-		"/Users/terrymeacham/projects/ridoku-cookbooks/unicorn/definitions/unicorn_web_app.rb",
-		"/Users/terrymeacham/projects/ridoku-cookbooks/nginx/definitions/nginx_web_app.rb"
+		"/Users/terrymeacham/projects/ridoku-cookbooks/unicorn/recipes/default.rb"
 	],
 	"find":
 	{
@@ -288,7 +323,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 93.0,
+		"height": 0.0,
 		"where_history":
 		[
 			"",
@@ -577,24 +612,23 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/controllers/application_controller.rb",
-					"semi_transient": true,
+					"file": "Gemfile",
 					"settings":
 					{
-						"buffer_size": 204,
+						"buffer_size": 1395,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								204,
-								204
+								1031,
+								1031
 							]
 						],
 						"settings":
@@ -605,24 +639,50 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "Gemfile",
-					"semi_transient": false,
+					"file": "app/views/tasks/index.html.erb",
 					"settings":
 					{
-						"buffer_size": 1216,
+						"buffer_size": 2166,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								620,
-								620
+								708,
+								714
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 173.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "config/routes.rb",
+					"settings":
+					{
+						"buffer_size": 277,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								210,
+								227
 							]
 						],
 						"settings":
@@ -633,7 +693,86 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "db/schema.rb",
+					"settings":
+					{
+						"buffer_size": 1012,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								950,
+								919
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/assets/javascripts/index.js",
+					"settings":
+					{
+						"buffer_size": 30,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								28,
+								28
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/models/task.rb",
+					"settings":
+					{
+						"buffer_size": 366,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								307,
+								307
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
 					"type": "text"
 				}
 			]
@@ -678,7 +817,6 @@
 	{
 		"height": 0.0
 	},
-	"project": "tasklist-challenge.sublime-project",
 	"replace":
 	{
 		"height": 40.0
@@ -1328,24 +1466,10 @@
 		],
 		"width": 380.0
 	},
-	"select_symbol":
-	{
-		"height": 392.0,
-		"selected_items":
-		[
-		],
-		"width": 392.0
-	},
-	"settings":
-	{
-	},
 	"show_minimap": false,
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
 	"side_bar_width": 270.0,
-	"status_bar_visible": true,
-	"template_settings":
-	{
-	}
+	"status_bar_visible": true
 }

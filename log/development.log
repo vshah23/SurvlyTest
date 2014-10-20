@@ -13960,3 +13960,1570 @@ Processing by TasksController#index as HTML
   [1m[36mTask Load (0.2ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."archived" = 'f'[0m
   Rendered tasks/index.html.erb within layouts/application (11.8ms)
 Completed 200 OK in 18ms (Views: 17.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/tasks?utf8=%E2%9C%93&q=Add" for 127.0.0.1 at 2014-06-28 02:14:42 -0500
+Processing by TasksController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"Add", "exclude"=>[:show]}
+  Rendered tasks/_form.html.erb (1.4ms)
+  Rendered tasks/_search_form.html.erb (0.3ms)
+  [1m[35mTask Load (0.1ms)[0m  SELECT "tasks".* FROM "tasks" WHERE (("tasks"."title" LIKE 'Add' OR "tasks"."description" LIKE 'Add'))
+  Rendered tasks/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-28 02:14:42 -0500
+
+
+Started GET "/assets/docs.css?body=1" for 127.0.0.1 at 2014-06-28 02:14:42 -0500
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2014-06-28 02:14:42 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-28 02:14:42 -0500
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-06-28 02:14:42 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-28 02:14:42 -0500
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-06-28 02:14:42 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-28 02:14:42 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-28 02:14:42 -0500
+
+
+Started GET "/assets/docs.js?body=1" for 127.0.0.1 at 2014-06-28 02:14:42 -0500
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2014-06-28 02:14:42 -0500
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-06-28 02:14:42 -0500
+
+
+Started GET "/assets/maps_javascript.js?body=1" for 127.0.0.1 at 2014-06-28 02:14:42 -0500
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2014-06-28 02:14:42 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-28 02:14:42 -0500
+
+
+Started GET "/assets/tasks_javascript.js?body=1" for 127.0.0.1 at 2014-06-28 02:14:42 -0500
+
+
+Started GET "/tasks?utf8=%E2%9C%93&q=a" for 127.0.0.1 at 2014-06-28 02:26:38 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TasksController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"a", "exclude"=>[:show]}
+  Rendered tasks/_form.html.erb (1.4ms)
+  Rendered tasks/_search_form.html.erb (0.4ms)
+  [1m[35mTask Load (0.1ms)[0m  SELECT "tasks".* FROM "tasks" WHERE (("tasks"."title" LIKE 'a' OR "tasks"."description" LIKE 'a'))
+  Rendered tasks/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-28 02:26:38 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-28 02:26:38 -0500
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-06-28 02:26:38 -0500
+
+
+Started GET "/assets/docs.css?body=1" for 127.0.0.1 at 2014-06-28 02:26:38 -0500
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2014-06-28 02:26:38 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-28 02:26:38 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-28 02:26:38 -0500
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-06-28 02:26:38 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-28 02:26:38 -0500
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-06-28 02:26:38 -0500
+
+
+Started GET "/assets/docs.js?body=1" for 127.0.0.1 at 2014-06-28 02:26:38 -0500
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2014-06-28 02:26:38 -0500
+
+
+Started GET "/assets/maps_javascript.js?body=1" for 127.0.0.1 at 2014-06-28 02:26:38 -0500
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2014-06-28 02:26:38 -0500
+
+
+Started GET "/assets/tasks_javascript.js?body=1" for 127.0.0.1 at 2014-06-28 02:26:38 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-28 02:26:38 -0500
+
+
+Started POST "/tasks" for 127.0.0.1 at 2014-06-28 02:36:39 -0500
+Processing by TasksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9mpJ6I1ols6XZkzffv3sMmTyGwGUUYJNnqc+ZLE8c4E=", "task"=>{"archived"=>"false", "complete"=>"false", "title"=>"", "description"=>""}, "commit"=>"Create Task", "exclude"=>[:show]}
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "tasks" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Sat, 28 Jun 2014 07:36:39 UTC +00:00], ["description", ""], ["title", ""], ["updated_at", Sat, 28 Jun 2014 07:36:39 UTC +00:00]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/tasks
+Completed 302 Found in 4ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2014-06-28 02:36:39 -0500
+Processing by TasksController#index as HTML
+  Parameters: {"exclude"=>[:show]}
+  Rendered tasks/_form.html.erb (2.0ms)
+  Rendered tasks/_search_form.html.erb (0.5ms)
+  [1m[35mTask Load (0.2ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."archived" = 'f'
+  Rendered tasks/index.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 19ms (Views: 18.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-28 02:36:39 -0500
+
+
+Started GET "/assets/docs.css?body=1" for 127.0.0.1 at 2014-06-28 02:36:39 -0500
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2014-06-28 02:36:39 -0500
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-06-28 02:36:39 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-28 02:36:39 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-28 02:36:39 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-28 02:36:39 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-28 02:36:39 -0500
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-06-28 02:36:39 -0500
+
+
+Started GET "/assets/docs.js?body=1" for 127.0.0.1 at 2014-06-28 02:36:39 -0500
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-06-28 02:36:39 -0500
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2014-06-28 02:36:39 -0500
+
+
+Started GET "/assets/maps_javascript.js?body=1" for 127.0.0.1 at 2014-06-28 02:36:39 -0500
+
+
+Started GET "/assets/tasks_javascript.js?body=1" for 127.0.0.1 at 2014-06-28 02:36:39 -0500
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2014-06-28 02:36:39 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-28 02:36:39 -0500
+
+
+Started DELETE "/tasks/40" for 127.0.0.1 at 2014-06-28 02:36:47 -0500
+Processing by TasksController#destroy as HTML
+  Parameters: {"authenticity_token"=>"9mpJ6I1ols6XZkzffv3sMmTyGwGUUYJNnqc+ZLE8c4E=", "exclude"=>[:show], "id"=>"40"}
+  [1m[36mTask Load (0.1ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", "40"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "tasks" WHERE "tasks"."id" = ?[0m  [["id", 40]]
+  [1m[35m (5.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/tasks
+Completed 302 Found in 9ms (ActiveRecord: 6.0ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2014-06-28 02:36:47 -0500
+Processing by TasksController#index as HTML
+  Parameters: {"exclude"=>[:show]}
+  Rendered tasks/_form.html.erb (1.4ms)
+  Rendered tasks/_search_form.html.erb (0.4ms)
+  [1m[36mTask Load (0.2ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."archived" = 'f'[0m
+  Rendered tasks/index.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 17ms (Views: 16.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-28 02:36:47 -0500
+
+
+Started GET "/assets/docs.css?body=1" for 127.0.0.1 at 2014-06-28 02:36:47 -0500
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2014-06-28 02:36:47 -0500
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-06-28 02:36:47 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-28 02:36:47 -0500
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-06-28 02:36:47 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-28 02:36:47 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-28 02:36:47 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-28 02:36:47 -0500
+
+
+Started GET "/assets/docs.js?body=1" for 127.0.0.1 at 2014-06-28 02:36:47 -0500
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2014-06-28 02:36:47 -0500
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-06-28 02:36:47 -0500
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2014-06-28 02:36:47 -0500
+
+
+Started GET "/assets/maps_javascript.js?body=1" for 127.0.0.1 at 2014-06-28 02:36:47 -0500
+
+
+Started GET "/assets/tasks_javascript.js?body=1" for 127.0.0.1 at 2014-06-28 02:36:47 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-28 02:36:47 -0500
+
+
+Started GET "/tasks?utf8=%E2%9C%93&q=Add+complete+support" for 127.0.0.1 at 2014-06-28 02:36:55 -0500
+Processing by TasksController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"Add complete support", "exclude"=>[:show]}
+  Rendered tasks/_form.html.erb (1.9ms)
+  Rendered tasks/_search_form.html.erb (0.5ms)
+  [1m[35mTask Load (0.2ms)[0m  SELECT "tasks".* FROM "tasks" WHERE (("tasks"."title" LIKE 'Add complete support' OR "tasks"."description" LIKE 'Add complete support'))
+  Rendered tasks/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-06-28 02:36:55 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-28 02:36:55 -0500
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2014-06-28 02:36:55 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-28 02:36:55 -0500
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-06-28 02:36:55 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-28 02:36:55 -0500
+
+
+Started GET "/assets/docs.css?body=1" for 127.0.0.1 at 2014-06-28 02:36:55 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-28 02:36:55 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-28 02:36:55 -0500
+
+
+Started GET "/assets/docs.js?body=1" for 127.0.0.1 at 2014-06-28 02:36:55 -0500
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-06-28 02:36:55 -0500
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2014-06-28 02:36:55 -0500
+
+
+Started GET "/assets/maps_javascript.js?body=1" for 127.0.0.1 at 2014-06-28 02:36:55 -0500
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2014-06-28 02:36:55 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-28 02:36:55 -0500
+
+
+Started GET "/assets/tasks_javascript.js?body=1" for 127.0.0.1 at 2014-06-28 02:36:55 -0500
+
+
+Started GET "/tasks?utf8=%E2%9C%93&q=Add+complete+support" for 127.0.0.1 at 2014-06-28 02:41:47 -0500
+Processing by TasksController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"Add complete support", "exclude"=>[:show]}
+  Rendered tasks/_form.html.erb (1.3ms)
+  Rendered tasks/_search_form.html.erb (0.4ms)
+  [1m[36mTask Load (0.1ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE (("tasks"."title" LIKE 'Add complete support' OR "tasks"."description" LIKE 'Add complete support'))[0m
+  Rendered tasks/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-28 02:41:47 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-28 02:41:48 -0500
+
+
+Started GET "/assets/docs.css?body=1" for 127.0.0.1 at 2014-06-28 02:41:48 -0500
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-06-28 02:41:48 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-28 02:41:48 -0500
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2014-06-28 02:41:48 -0500
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-06-28 02:41:48 -0500
+
+
+Started GET "/assets/docs.js?body=1" for 127.0.0.1 at 2014-06-28 02:41:48 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-28 02:41:48 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-28 02:41:48 -0500
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2014-06-28 02:41:48 -0500
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-06-28 02:41:48 -0500
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2014-06-28 02:41:48 -0500
+
+
+Started GET "/assets/maps_javascript.js?body=1" for 127.0.0.1 at 2014-06-28 02:41:48 -0500
+
+
+Started GET "/assets/tasks_javascript.js?body=1" for 127.0.0.1 at 2014-06-28 02:41:48 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-28 02:41:48 -0500
+
+
+Started GET "/tasks?q=Add+complete+support" for 127.0.0.1 at 2014-06-28 02:42:12 -0500
+Processing by TasksController#index as HTML
+  Parameters: {"q"=>"Add complete support", "exclude"=>[:show]}
+  Rendered tasks/_form.html.erb (1.4ms)
+  Rendered tasks/_search_form.html.erb (0.3ms)
+  [1m[35mTask Load (0.1ms)[0m  SELECT "tasks".* FROM "tasks" WHERE (("tasks"."title" LIKE 'Add complete support' OR "tasks"."description" LIKE 'Add complete support'))
+  Rendered tasks/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-28 02:42:12 -0500
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-06-28 02:42:12 -0500
+
+
+Started GET "/assets/docs.css?body=1" for 127.0.0.1 at 2014-06-28 02:42:12 -0500
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2014-06-28 02:42:12 -0500
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-06-28 02:42:12 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-28 02:42:12 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-28 02:42:12 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-28 02:42:12 -0500
+
+
+Started GET "/assets/docs.js?body=1" for 127.0.0.1 at 2014-06-28 02:42:12 -0500
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-06-28 02:42:12 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-28 02:42:12 -0500
+
+
+Started GET "/assets/maps_javascript.js?body=1" for 127.0.0.1 at 2014-06-28 02:42:12 -0500
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2014-06-28 02:42:12 -0500
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2014-06-28 02:42:12 -0500
+
+
+Started GET "/assets/tasks_javascript.js?body=1" for 127.0.0.1 at 2014-06-28 02:42:12 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-28 02:42:12 -0500
+
+
+Started GET "/tasks?archived=true" for 127.0.0.1 at 2014-06-28 02:42:28 -0500
+Processing by TasksController#index as HTML
+  Parameters: {"archived"=>"true", "exclude"=>[:show]}
+  Rendered tasks/_form.html.erb (1.4ms)
+  Rendered tasks/_search_form.html.erb (0.5ms)
+  [1m[36mTask Load (0.1ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."archived" = 't'[0m
+  Rendered tasks/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/tasks/20/edit" for 127.0.0.1 at 2014-06-28 02:42:40 -0500
+Processing by TasksController#edit as HTML
+  Parameters: {"exclude"=>[:show], "id"=>"20"}
+  [1m[35mTask Load (0.1ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT 1  [["id", "20"]]
+  Rendered tasks/_form.html.erb (2.7ms)
+  Rendered tasks/edit.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/tasks/20" for 127.0.0.1 at 2014-06-28 02:42:48 -0500
+Processing by TasksController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9mpJ6I1ols6XZkzffv3sMmTyGwGUUYJNnqc+ZLE8c4E=", "task"=>{"complete"=>"1", "archived"=>"1", "title"=>"<b>Instructions: Read Carefully!</b>", "description"=>"<h1>Task List Instructions</h1>\r\n\r\n<p>Now that you have properly configured Ruby and Rails on your machine, we have a few challenge questions listed below in this task list.\r\n<strong>REQUIREMENTS</strong> for completion are listed below.</p>\r\n\r\n<ol>\r\n<li>Complete as many as you can/want to complete, but you <strong>must AT LEAST complete 1 from each task class</strong> (<code>[A]</code>, <code>[B]</code>, <code>[C]</code>, <code>[D]</code>, and <code>[E]</code>). We encourage you to complete as many as you can.</li>\r\n<li>Clearly mark all modified code with comments indicating the task by title (e.g., <code>### Add archive support</code>).</li>\r\n<li>Try to complete every challenge question in a single commit and use the task title as the commit message (e.g., <code>Add complete support</code>).</li>\r\n</ol>\r\n\r\n<p>If you can&#39;t get something working, add a comment to the README file or in the source describing what you were trying to do and why you think its not working.\r\nThere is no reason to spend an exorbitant amount of time on any one of these questions.  They should be fairly straight-forward.  Tasks like these will be frequent.</p>\r\n\r\n<p>I recommend doing &#39;Add archive support&#39; first then archiving tasks you don&#39;t want to do. Just make sure you get one from each task class!</p>\r\n\r\n<p><strong>Good Luck!</strong></p>\r\n"}, "commit"=>"Update Task", "exclude"=>[:show], "id"=>"20"}
+  [1m[36mTask Load (0.1ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", "20"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "tasks" SET "complete" = ?, "updated_at" = ? WHERE "tasks"."id" = 20[0m  [["complete", true], ["updated_at", Sat, 28 Jun 2014 07:42:48 UTC +00:00]]
+  [1m[35m (1.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/tasks
+Completed 302 Found in 4ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2014-06-28 02:42:48 -0500
+Processing by TasksController#index as HTML
+  Parameters: {"exclude"=>[:show]}
+  Rendered tasks/_form.html.erb (1.3ms)
+  Rendered tasks/_search_form.html.erb (0.3ms)
+  [1m[36mTask Load (0.1ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."archived" = 'f'[0m
+  Rendered tasks/index.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 16ms (Views: 15.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-28 02:42:48 -0500
+
+
+Started GET "/assets/docs.css?body=1" for 127.0.0.1 at 2014-06-28 02:42:48 -0500
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-06-28 02:42:48 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-28 02:42:48 -0500
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2014-06-28 02:42:48 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-28 02:42:48 -0500
+
+
+Started GET "/assets/docs.js?body=1" for 127.0.0.1 at 2014-06-28 02:42:48 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-28 02:42:48 -0500
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-06-28 02:42:48 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-28 02:42:48 -0500
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-06-28 02:42:48 -0500
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2014-06-28 02:42:48 -0500
+
+
+Started GET "/assets/maps_javascript.js?body=1" for 127.0.0.1 at 2014-06-28 02:42:48 -0500
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2014-06-28 02:42:48 -0500
+
+
+Started GET "/assets/tasks_javascript.js?body=1" for 127.0.0.1 at 2014-06-28 02:42:48 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-28 02:42:48 -0500
+
+
+Started GET "/tasks?archived=true" for 127.0.0.1 at 2014-06-28 02:42:52 -0500
+Processing by TasksController#index as HTML
+  Parameters: {"archived"=>"true", "exclude"=>[:show]}
+  Rendered tasks/_form.html.erb (1.7ms)
+  Rendered tasks/_search_form.html.erb (0.5ms)
+  [1m[35mTask Load (0.1ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."archived" = 't'
+  Rendered tasks/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 14ms (Views: 12.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/tasks?archived=false" for 127.0.0.1 at 2014-06-28 02:42:56 -0500
+Processing by TasksController#index as HTML
+  Parameters: {"archived"=>"false", "exclude"=>[:show]}
+  Rendered tasks/_form.html.erb (1.5ms)
+  Rendered tasks/_search_form.html.erb (0.5ms)
+  [1m[36mTask Load (0.3ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."archived" = 'f'[0m
+  Rendered tasks/index.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 17ms (Views: 16.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tasks?utf8=%E2%9C%93&q=q" for 127.0.0.1 at 2014-06-28 02:48:08 -0500
+Processing by TasksController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"q", "exclude"=>[:show]}
+  Rendered tasks/_form.html.erb (1.5ms)
+  Rendered tasks/_search_form.html.erb (0.4ms)
+  [1m[35mTask Load (0.1ms)[0m  SELECT "tasks".* FROM "tasks" WHERE (("tasks"."title" LIKE 'q' OR "tasks"."description" LIKE 'q'))
+  Rendered tasks/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-28 02:48:08 -0500
+
+
+Started GET "/assets/docs.css?body=1" for 127.0.0.1 at 2014-06-28 02:48:08 -0500
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-06-28 02:48:08 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-28 02:48:08 -0500
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2014-06-28 02:48:08 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-28 02:48:08 -0500
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-06-28 02:48:08 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-28 02:48:08 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-28 02:48:08 -0500
+
+
+Started GET "/assets/docs.js?body=1" for 127.0.0.1 at 2014-06-28 02:48:08 -0500
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-06-28 02:48:08 -0500
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2014-06-28 02:48:08 -0500
+
+
+Started GET "/assets/maps_javascript.js?body=1" for 127.0.0.1 at 2014-06-28 02:48:08 -0500
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2014-06-28 02:48:08 -0500
+
+
+Started GET "/assets/tasks_javascript.js?body=1" for 127.0.0.1 at 2014-06-28 02:48:08 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-28 02:48:08 -0500
+
+
+Started GET "/tasks?archived=true" for 127.0.0.1 at 2014-06-28 14:00:46 -0500
+
+SyntaxError (/Users/vikas/SurvlyTest/app/controllers/tasks_controller.rb:15: syntax error, unexpected (, expecting ')'
+        (Task.arel_table[:description].matches(@query))
+         ^):
+  activesupport (4.0.5) lib/active_support/dependencies.rb:424:in `load'
+  activesupport (4.0.5) lib/active_support/dependencies.rb:424:in `block in load_file'
+  activesupport (4.0.5) lib/active_support/dependencies.rb:616:in `new_constants_in'
+  activesupport (4.0.5) lib/active_support/dependencies.rb:423:in `load_file'
+  activesupport (4.0.5) lib/active_support/dependencies.rb:324:in `require_or_load'
+  activesupport (4.0.5) lib/active_support/dependencies.rb:463:in `load_missing_constant'
+  activesupport (4.0.5) lib/active_support/dependencies.rb:184:in `const_missing'
+  activesupport (4.0.5) lib/active_support/inflector/methods.rb:226:in `const_get'
+  activesupport (4.0.5) lib/active_support/inflector/methods.rb:226:in `block in constantize'
+  activesupport (4.0.5) lib/active_support/inflector/methods.rb:224:in `each'
+  activesupport (4.0.5) lib/active_support/inflector/methods.rb:224:in `inject'
+  activesupport (4.0.5) lib/active_support/inflector/methods.rb:224:in `constantize'
+  activesupport (4.0.5) lib/active_support/dependencies.rb:535:in `get'
+  activesupport (4.0.5) lib/active_support/dependencies.rb:566:in `constantize'
+  actionpack (4.0.5) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.0.5) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.0.5) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.0.5) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.5) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.5) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.5) lib/action_dispatch/routing/route_set.rb:674:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.5) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.5) lib/active_support/callbacks.rb:373:in `_run__2280574310931258075__call__callbacks'
+  activesupport (4.0.5) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.5) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.5) lib/rails/engine.rb:511:in `call'
+  railties (4.0.5) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/vikas/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/vikas/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/vikas/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/vikas/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/vikas/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/vikas/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/vikas/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.0ms)
+
+
+Started GET "/tasks?archived=true" for 127.0.0.1 at 2014-06-28 14:00:46 -0500
+
+SyntaxError (/Users/vikas/SurvlyTest/app/controllers/tasks_controller.rb:15: syntax error, unexpected (, expecting ')'
+        (Task.arel_table[:description].matches(@query))
+         ^):
+  activesupport (4.0.5) lib/active_support/dependencies.rb:424:in `load'
+  activesupport (4.0.5) lib/active_support/dependencies.rb:424:in `block in load_file'
+  activesupport (4.0.5) lib/active_support/dependencies.rb:616:in `new_constants_in'
+  activesupport (4.0.5) lib/active_support/dependencies.rb:423:in `load_file'
+  activesupport (4.0.5) lib/active_support/dependencies.rb:324:in `require_or_load'
+  activesupport (4.0.5) lib/active_support/dependencies.rb:463:in `load_missing_constant'
+  activesupport (4.0.5) lib/active_support/dependencies.rb:184:in `const_missing'
+  activesupport (4.0.5) lib/active_support/inflector/methods.rb:226:in `const_get'
+  activesupport (4.0.5) lib/active_support/inflector/methods.rb:226:in `block in constantize'
+  activesupport (4.0.5) lib/active_support/inflector/methods.rb:224:in `each'
+  activesupport (4.0.5) lib/active_support/inflector/methods.rb:224:in `inject'
+  activesupport (4.0.5) lib/active_support/inflector/methods.rb:224:in `constantize'
+  activesupport (4.0.5) lib/active_support/dependencies.rb:535:in `get'
+  activesupport (4.0.5) lib/active_support/dependencies.rb:566:in `constantize'
+  actionpack (4.0.5) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.0.5) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.0.5) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.0.5) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.5) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.5) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.5) lib/action_dispatch/routing/route_set.rb:674:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.5) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.5) lib/active_support/callbacks.rb:373:in `_run__2280574310931258075__call__callbacks'
+  activesupport (4.0.5) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.5) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.5) lib/rails/engine.rb:511:in `call'
+  railties (4.0.5) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/vikas/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/vikas/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/vikas/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/vikas/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/vikas/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/vikas/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/vikas/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.8ms)
+
+
+Started GET "/tasks?archived=true" for 127.0.0.1 at 2014-06-28 14:01:57 -0500
+
+SyntaxError (/Users/vikas/SurvlyTest/app/controllers/tasks_controller.rb:15: syntax error, unexpected (, expecting ')'
+        (Task.where(@tasks[:description].matches(@query))
+         ^
+/Users/vikas/SurvlyTest/app/controllers/tasks_controller.rb:16: syntax error, unexpected keyword_else, expecting ')'
+/Users/vikas/SurvlyTest/app/controllers/tasks_controller.rb:22: syntax error, unexpected keyword_end, expecting ')'
+/Users/vikas/SurvlyTest/app/controllers/tasks_controller.rb:104: syntax error, unexpected keyword_end, expecting ')'):
+  activesupport (4.0.5) lib/active_support/dependencies.rb:424:in `load'
+  activesupport (4.0.5) lib/active_support/dependencies.rb:424:in `block in load_file'
+  activesupport (4.0.5) lib/active_support/dependencies.rb:616:in `new_constants_in'
+  activesupport (4.0.5) lib/active_support/dependencies.rb:423:in `load_file'
+  activesupport (4.0.5) lib/active_support/dependencies.rb:324:in `require_or_load'
+  activesupport (4.0.5) lib/active_support/dependencies.rb:463:in `load_missing_constant'
+  activesupport (4.0.5) lib/active_support/dependencies.rb:184:in `const_missing'
+  activesupport (4.0.5) lib/active_support/inflector/methods.rb:226:in `const_get'
+  activesupport (4.0.5) lib/active_support/inflector/methods.rb:226:in `block in constantize'
+  activesupport (4.0.5) lib/active_support/inflector/methods.rb:224:in `each'
+  activesupport (4.0.5) lib/active_support/inflector/methods.rb:224:in `inject'
+  activesupport (4.0.5) lib/active_support/inflector/methods.rb:224:in `constantize'
+  activesupport (4.0.5) lib/active_support/dependencies.rb:535:in `get'
+  activesupport (4.0.5) lib/active_support/dependencies.rb:566:in `constantize'
+  actionpack (4.0.5) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.0.5) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.0.5) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.0.5) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.5) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.5) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.5) lib/action_dispatch/routing/route_set.rb:674:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.5) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.5) lib/active_support/callbacks.rb:373:in `_run__2280574310931258075__call__callbacks'
+  activesupport (4.0.5) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.5) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.5) lib/rails/engine.rb:511:in `call'
+  railties (4.0.5) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/vikas/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/vikas/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/vikas/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/vikas/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/vikas/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/vikas/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/vikas/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.9ms)
+
+
+Started GET "/tasks?archived=true" for 127.0.0.1 at 2014-06-28 14:04:09 -0500
+
+SyntaxError (/Users/vikas/SurvlyTest/app/controllers/tasks_controller.rb:15: syntax error, unexpected (, expecting ')'
+        (Task.where(@tasks[:description].matches(@query))
+         ^
+/Users/vikas/SurvlyTest/app/controllers/tasks_controller.rb:16: syntax error, unexpected keyword_else, expecting ')'
+/Users/vikas/SurvlyTest/app/controllers/tasks_controller.rb:22: syntax error, unexpected keyword_end, expecting ')'
+/Users/vikas/SurvlyTest/app/controllers/tasks_controller.rb:104: syntax error, unexpected keyword_end, expecting ')'):
+  activesupport (4.0.5) lib/active_support/dependencies.rb:424:in `load'
+  activesupport (4.0.5) lib/active_support/dependencies.rb:424:in `block in load_file'
+  activesupport (4.0.5) lib/active_support/dependencies.rb:616:in `new_constants_in'
+  activesupport (4.0.5) lib/active_support/dependencies.rb:423:in `load_file'
+  activesupport (4.0.5) lib/active_support/dependencies.rb:324:in `require_or_load'
+  activesupport (4.0.5) lib/active_support/dependencies.rb:463:in `load_missing_constant'
+  activesupport (4.0.5) lib/active_support/dependencies.rb:184:in `const_missing'
+  activesupport (4.0.5) lib/active_support/inflector/methods.rb:226:in `const_get'
+  activesupport (4.0.5) lib/active_support/inflector/methods.rb:226:in `block in constantize'
+  activesupport (4.0.5) lib/active_support/inflector/methods.rb:224:in `each'
+  activesupport (4.0.5) lib/active_support/inflector/methods.rb:224:in `inject'
+  activesupport (4.0.5) lib/active_support/inflector/methods.rb:224:in `constantize'
+  activesupport (4.0.5) lib/active_support/dependencies.rb:535:in `get'
+  activesupport (4.0.5) lib/active_support/dependencies.rb:566:in `constantize'
+  actionpack (4.0.5) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.0.5) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.0.5) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.0.5) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.5) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.5) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.5) lib/action_dispatch/routing/route_set.rb:674:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.5) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.5) lib/active_support/callbacks.rb:373:in `_run__2280574310931258075__call__callbacks'
+  activesupport (4.0.5) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.5) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.5) lib/rails/engine.rb:511:in `call'
+  railties (4.0.5) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/vikas/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/vikas/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/vikas/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/vikas/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/vikas/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /Users/vikas/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/vikas/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.4ms)
+
+
+Started GET "/tasks?archived=true" for 127.0.0.1 at 2014-06-28 14:05:05 -0500
+
+SyntaxError (/Users/vikas/SurvlyTest/app/controllers/tasks_controller.rb:15: syntax error, unexpected (, expecting ')'
+        (Task.where(@tasks[:description].matches(@query)))
+         ^
+/Users/vikas/SurvlyTest/app/controllers/tasks_controller.rb:16: syntax error, unexpected ')', expecting keyword_end):
+  activesupport (4.0.5) lib/active_support/dependencies.rb:424:in `load'
+  activesupport (4.0.5) lib/active_support/dependencies.rb:424:in `block in load_file'
+  activesupport (4.0.5) lib/active_support/dependencies.rb:616:in `new_constants_in'
+  activesupport (4.0.5) lib/active_support/dependencies.rb:423:in `load_file'
+  activesupport (4.0.5) lib/active_support/dependencies.rb:324:in `require_or_load'
+  activesupport (4.0.5) lib/active_support/dependencies.rb:463:in `load_missing_constant'
+  activesupport (4.0.5) lib/active_support/dependencies.rb:184:in `const_missing'
+  activesupport (4.0.5) lib/active_support/inflector/methods.rb:226:in `const_get'
+  activesupport (4.0.5) lib/active_support/inflector/methods.rb:226:in `block in constantize'
+  activesupport (4.0.5) lib/active_support/inflector/methods.rb:224:in `each'
+  activesupport (4.0.5) lib/active_support/inflector/methods.rb:224:in `inject'
+  activesupport (4.0.5) lib/active_support/inflector/methods.rb:224:in `constantize'
+  activesupport (4.0.5) lib/active_support/dependencies.rb:535:in `get'
+  activesupport (4.0.5) lib/active_support/dependencies.rb:566:in `constantize'
+  actionpack (4.0.5) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.0.5) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.0.5) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.0.5) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.5) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.5) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.5) lib/action_dispatch/routing/route_set.rb:674:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.5) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.5) lib/active_support/callbacks.rb:373:in `_run__2280574310931258075__call__callbacks'
+  activesupport (4.0.5) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.5) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.5) lib/rails/engine.rb:511:in `call'
+  railties (4.0.5) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/vikas/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/vikas/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/vikas/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/vikas/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/vikas/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/vikas/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /Users/vikas/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.6ms)
+
+
+Started GET "/tasks?archived=true" for 127.0.0.1 at 2014-06-28 14:05:51 -0500
+
+SyntaxError (/Users/vikas/SurvlyTest/app/controllers/tasks_controller.rb:15: syntax error, unexpected (, expecting ')'
+        (Task.where(@tasks[:description].matches(@query)))
+         ^
+/Users/vikas/SurvlyTest/app/controllers/tasks_controller.rb:16: syntax error, unexpected ')', expecting keyword_end):
+  activesupport (4.0.5) lib/active_support/dependencies.rb:424:in `load'
+  activesupport (4.0.5) lib/active_support/dependencies.rb:424:in `block in load_file'
+  activesupport (4.0.5) lib/active_support/dependencies.rb:616:in `new_constants_in'
+  activesupport (4.0.5) lib/active_support/dependencies.rb:423:in `load_file'
+  activesupport (4.0.5) lib/active_support/dependencies.rb:324:in `require_or_load'
+  activesupport (4.0.5) lib/active_support/dependencies.rb:463:in `load_missing_constant'
+  activesupport (4.0.5) lib/active_support/dependencies.rb:184:in `const_missing'
+  activesupport (4.0.5) lib/active_support/inflector/methods.rb:226:in `const_get'
+  activesupport (4.0.5) lib/active_support/inflector/methods.rb:226:in `block in constantize'
+  activesupport (4.0.5) lib/active_support/inflector/methods.rb:224:in `each'
+  activesupport (4.0.5) lib/active_support/inflector/methods.rb:224:in `inject'
+  activesupport (4.0.5) lib/active_support/inflector/methods.rb:224:in `constantize'
+  activesupport (4.0.5) lib/active_support/dependencies.rb:535:in `get'
+  activesupport (4.0.5) lib/active_support/dependencies.rb:566:in `constantize'
+  actionpack (4.0.5) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.0.5) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.0.5) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.0.5) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.5) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.5) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.5) lib/action_dispatch/routing/route_set.rb:674:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.5) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.5) lib/active_support/callbacks.rb:373:in `_run__2280574310931258075__call__callbacks'
+  activesupport (4.0.5) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.5) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.5) lib/rails/engine.rb:511:in `call'
+  railties (4.0.5) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/vikas/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/vikas/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/vikas/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/vikas/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /Users/vikas/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /Users/vikas/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/vikas/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.3ms)
+
+
+Started GET "/tasks?archived=true" for 127.0.0.1 at 2014-06-28 14:05:53 -0500
+
+SyntaxError (/Users/vikas/SurvlyTest/app/controllers/tasks_controller.rb:15: syntax error, unexpected (, expecting ')'
+        (Task.where(@tasks[:description].matches(@query)))
+         ^
+/Users/vikas/SurvlyTest/app/controllers/tasks_controller.rb:16: syntax error, unexpected ')', expecting keyword_end):
+  activesupport (4.0.5) lib/active_support/dependencies.rb:424:in `load'
+  activesupport (4.0.5) lib/active_support/dependencies.rb:424:in `block in load_file'
+  activesupport (4.0.5) lib/active_support/dependencies.rb:616:in `new_constants_in'
+  activesupport (4.0.5) lib/active_support/dependencies.rb:423:in `load_file'
+  activesupport (4.0.5) lib/active_support/dependencies.rb:324:in `require_or_load'
+  activesupport (4.0.5) lib/active_support/dependencies.rb:463:in `load_missing_constant'
+  activesupport (4.0.5) lib/active_support/dependencies.rb:184:in `const_missing'
+  activesupport (4.0.5) lib/active_support/inflector/methods.rb:226:in `const_get'
+  activesupport (4.0.5) lib/active_support/inflector/methods.rb:226:in `block in constantize'
+  activesupport (4.0.5) lib/active_support/inflector/methods.rb:224:in `each'
+  activesupport (4.0.5) lib/active_support/inflector/methods.rb:224:in `inject'
+  activesupport (4.0.5) lib/active_support/inflector/methods.rb:224:in `constantize'
+  activesupport (4.0.5) lib/active_support/dependencies.rb:535:in `get'
+  activesupport (4.0.5) lib/active_support/dependencies.rb:566:in `constantize'
+  actionpack (4.0.5) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.0.5) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.0.5) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.0.5) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.5) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.5) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.5) lib/action_dispatch/routing/route_set.rb:674:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.5) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.5) lib/active_support/callbacks.rb:373:in `_run__2280574310931258075__call__callbacks'
+  activesupport (4.0.5) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.5) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.5) lib/rails/engine.rb:511:in `call'
+  railties (4.0.5) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/vikas/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/vikas/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/vikas/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/vikas/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.3ms)
+  Rendered /Users/vikas/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /Users/vikas/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/vikas/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.9ms)
+
+
+Started GET "/tasks?archived=true" for 127.0.0.1 at 2014-06-28 14:05:53 -0500
+
+SyntaxError (/Users/vikas/SurvlyTest/app/controllers/tasks_controller.rb:15: syntax error, unexpected (, expecting ')'
+        (Task.where(@tasks[:description].matches(@query)))
+         ^
+/Users/vikas/SurvlyTest/app/controllers/tasks_controller.rb:16: syntax error, unexpected ')', expecting keyword_end):
+  activesupport (4.0.5) lib/active_support/dependencies.rb:424:in `load'
+  activesupport (4.0.5) lib/active_support/dependencies.rb:424:in `block in load_file'
+  activesupport (4.0.5) lib/active_support/dependencies.rb:616:in `new_constants_in'
+  activesupport (4.0.5) lib/active_support/dependencies.rb:423:in `load_file'
+  activesupport (4.0.5) lib/active_support/dependencies.rb:324:in `require_or_load'
+  activesupport (4.0.5) lib/active_support/dependencies.rb:463:in `load_missing_constant'
+  activesupport (4.0.5) lib/active_support/dependencies.rb:184:in `const_missing'
+  activesupport (4.0.5) lib/active_support/inflector/methods.rb:226:in `const_get'
+  activesupport (4.0.5) lib/active_support/inflector/methods.rb:226:in `block in constantize'
+  activesupport (4.0.5) lib/active_support/inflector/methods.rb:224:in `each'
+  activesupport (4.0.5) lib/active_support/inflector/methods.rb:224:in `inject'
+  activesupport (4.0.5) lib/active_support/inflector/methods.rb:224:in `constantize'
+  activesupport (4.0.5) lib/active_support/dependencies.rb:535:in `get'
+  activesupport (4.0.5) lib/active_support/dependencies.rb:566:in `constantize'
+  actionpack (4.0.5) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.0.5) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.0.5) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.0.5) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.5) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.5) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.5) lib/action_dispatch/routing/route_set.rb:674:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.5) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.5) lib/active_support/callbacks.rb:373:in `_run__2280574310931258075__call__callbacks'
+  activesupport (4.0.5) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.5) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.5) lib/rails/engine.rb:511:in `call'
+  railties (4.0.5) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/vikas/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/vikas/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/vikas/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/vikas/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /Users/vikas/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /Users/vikas/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/vikas/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.5ms)
+
+
+Started GET "/tasks?archived=true" for 127.0.0.1 at 2014-06-28 14:06:24 -0500
+Processing by TasksController#index as HTML
+  Parameters: {"archived"=>"true", "exclude"=>[:show]}
+  Rendered tasks/_form.html.erb (4.8ms)
+  Rendered tasks/_search_form.html.erb (0.4ms)
+  [1m[36mTask Load (0.1ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."archived" = 't'[0m
+  Rendered tasks/index.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 37ms (Views: 26.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-28 14:06:24 -0500
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-06-28 14:06:24 -0500
+
+
+Started GET "/assets/docs.css?body=1" for 127.0.0.1 at 2014-06-28 14:06:24 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-28 14:06:24 -0500
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2014-06-28 14:06:24 -0500
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-06-28 14:06:24 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-28 14:06:24 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-28 14:06:24 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-28 14:06:24 -0500
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-06-28 14:06:24 -0500
+
+
+Started GET "/assets/docs.js?body=1" for 127.0.0.1 at 2014-06-28 14:06:24 -0500
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2014-06-28 14:06:24 -0500
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2014-06-28 14:06:24 -0500
+
+
+Started GET "/assets/maps_javascript.js?body=1" for 127.0.0.1 at 2014-06-28 14:06:24 -0500
+
+
+Started GET "/assets/tasks_javascript.js?body=1" for 127.0.0.1 at 2014-06-28 14:06:24 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-28 14:06:24 -0500
+
+
+Started GET "/tasks?archived=false" for 127.0.0.1 at 2014-06-28 14:06:27 -0500
+Processing by TasksController#index as HTML
+  Parameters: {"archived"=>"false", "exclude"=>[:show]}
+  Rendered tasks/_form.html.erb (1.6ms)
+  Rendered tasks/_search_form.html.erb (0.3ms)
+  [1m[35mTask Load (0.2ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."archived" = 'f'
+  Rendered tasks/index.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 19ms (Views: 17.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks?utf8=%E2%9C%93&q=Add" for 127.0.0.1 at 2014-06-28 14:06:32 -0500
+Processing by TasksController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"Add", "exclude"=>[:show]}
+  Rendered tasks/_form.html.erb (1.7ms)
+  Rendered tasks/_search_form.html.erb (0.5ms)
+  Rendered tasks/index.html.erb within layouts/application (4.7ms)
+Completed 500 Internal Server Error in 6ms
+
+ActionView::Template::Error (undefined method `each' for #<Arel::Table:0x007fb840121330>):
+    37:         </thead>
+    38: 
+    39:         <tbody>
+    40:           <% @tasks.each do |task| %>
+    41:             <tr>
+    42:               <!-- ### Style completed tasks -->
+    43:               <% if task.complete %>
+  app/views/tasks/index.html.erb:40:in `_app_views_tasks_index_html_erb___194973159039232867_70214618795400'
+
+
+  Rendered /Users/vikas/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/vikas/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/vikas/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.9ms)
+
+
+Started GET "/tasks?utf8=%E2%9C%93&q=Add" for 127.0.0.1 at 2014-06-28 14:12:17 -0500
+Processing by TasksController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"Add", "exclude"=>[:show]}
+  Rendered tasks/_form.html.erb (4.7ms)
+  Rendered tasks/_search_form.html.erb (0.6ms)
+  [1m[36mTask Load (0.2ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE (("tasks"."title" LIKE 'Add' OR "tasks"."description" LIKE 'Add'))[0m
+  Rendered tasks/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 15ms (Views: 12.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-06-28 14:12:17 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-28 14:12:17 -0500
+
+
+Started GET "/assets/docs.css?body=1" for 127.0.0.1 at 2014-06-28 14:12:17 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-28 14:12:17 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-28 14:12:17 -0500
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2014-06-28 14:12:17 -0500
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-06-28 14:12:17 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-28 14:12:17 -0500
+
+
+Started GET "/assets/docs.js?body=1" for 127.0.0.1 at 2014-06-28 14:12:17 -0500
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2014-06-28 14:12:17 -0500
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-06-28 14:12:17 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-28 14:12:17 -0500
+
+
+Started GET "/assets/maps_javascript.js?body=1" for 127.0.0.1 at 2014-06-28 14:12:17 -0500
+
+
+Started GET "/assets/tasks_javascript.js?body=1" for 127.0.0.1 at 2014-06-28 14:12:17 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-28 14:12:17 -0500
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2014-06-28 14:12:17 -0500
+  [1m[36mTask Load (0.1ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE (("tasks"."title" LIKE NULL OR "tasks"."description" LIKE NULL))[0m
+  [1m[35mTask Load (0.1ms)[0m  SELECT "tasks".* FROM "tasks" WHERE (("tasks"."title" LIKE NULL OR "tasks"."description" LIKE NULL))
+  [1m[36mTask Load (0.1ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE (("tasks"."title" LIKE NULL OR "tasks"."description" LIKE NULL))[0m
+  [1m[35mTask Load (0.1ms)[0m  SELECT "tasks".* FROM "tasks" WHERE (("tasks"."title" LIKE 'Add' OR "tasks"."description" LIKE 'Add'))
+  [1m[36mTask Load (0.1ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE (("tasks"."title" LIKE 'Add' OR "tasks"."description" LIKE 'Add'))[0m
+
+
+Started GET "/tasks?archived=false" for 127.0.0.1 at 2014-06-28 16:07:11 -0500
+Processing by TasksController#index as HTML
+  Parameters: {"archived"=>"false", "exclude"=>[:show]}
+  Rendered tasks/_form.html.erb (4.9ms)
+  Rendered tasks/_search_form.html.erb (0.5ms)
+  [1m[35mTask Load (0.2ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."archived" = 'f'
+  Rendered tasks/index.html.erb within layouts/application (15.4ms)
+Completed 200 OK in 36ms (Views: 33.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-28 16:07:11 -0500
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-06-28 16:07:11 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-28 16:07:11 -0500
+
+
+Started GET "/assets/docs.css?body=1" for 127.0.0.1 at 2014-06-28 16:07:11 -0500
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2014-06-28 16:07:11 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-28 16:07:11 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-28 16:07:11 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-28 16:07:11 -0500
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-06-28 16:07:12 -0500
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-06-28 16:07:12 -0500
+
+
+Started GET "/assets/docs.js?body=1" for 127.0.0.1 at 2014-06-28 16:07:12 -0500
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2014-06-28 16:07:12 -0500
+
+
+Started GET "/assets/maps_javascript.js?body=1" for 127.0.0.1 at 2014-06-28 16:07:12 -0500
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2014-06-28 16:07:12 -0500
+
+
+Started GET "/assets/tasks_javascript.js?body=1" for 127.0.0.1 at 2014-06-28 16:07:12 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-28 16:07:12 -0500
+
+
+Started GET "/tasks?utf8=%E2%9C%93&q=Add+complete" for 127.0.0.1 at 2014-06-28 16:07:18 -0500
+Processing by TasksController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"Add complete", "exclude"=>[:show]}
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from index at /Users/vikas/SurvlyTest/app/controllers/tasks_controller.rb:13)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from index at /Users/vikas/SurvlyTest/app/controllers/tasks_controller.rb:13)
+  [1m[36mTask Load (0.2ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE (name LIKE '%Add complete%')[0m
+SQLite3::SQLException: no such column: name: SELECT "tasks".* FROM "tasks"  WHERE (name LIKE '%Add complete%')
+Completed 500 Internal Server Error in 2ms
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: name: SELECT "tasks".* FROM "tasks"  WHERE (name LIKE '%Add complete%')):
+  app/controllers/tasks_controller.rb:13:in `index'
+
+
+  Rendered /Users/vikas/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/vikas/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/vikas/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/vikas/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.8ms)
+
+
+Started GET "/tasks?utf8=%E2%9C%93&q=Add+complete" for 127.0.0.1 at 2014-06-28 16:07:39 -0500
+Processing by TasksController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"Add complete", "exclude"=>[:show]}
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from index at /Users/vikas/SurvlyTest/app/controllers/tasks_controller.rb:13)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from index at /Users/vikas/SurvlyTest/app/controllers/tasks_controller.rb:13)
+  [1m[35mTask Load (0.1ms)[0m  SELECT "tasks".* FROM "tasks" WHERE (title LIKE '%Add complete%')
+  Rendered tasks/_form.html.erb (1.7ms)
+  Rendered tasks/_search_form.html.erb (0.5ms)
+  Rendered tasks/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 16ms (Views: 10.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-28 16:07:39 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-28 16:07:39 -0500
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2014-06-28 16:07:39 -0500
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-06-28 16:07:39 -0500
+
+
+Started GET "/assets/docs.css?body=1" for 127.0.0.1 at 2014-06-28 16:07:39 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-28 16:07:39 -0500
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-06-28 16:07:39 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-28 16:07:39 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-28 16:07:39 -0500
+
+
+Started GET "/assets/docs.js?body=1" for 127.0.0.1 at 2014-06-28 16:07:39 -0500
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-06-28 16:07:39 -0500
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2014-06-28 16:07:39 -0500
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2014-06-28 16:07:39 -0500
+
+
+Started GET "/assets/tasks_javascript.js?body=1" for 127.0.0.1 at 2014-06-28 16:07:39 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-28 16:07:39 -0500
+
+
+Started GET "/assets/maps_javascript.js?body=1" for 127.0.0.1 at 2014-06-28 16:07:39 -0500
+
+
+Started GET "/tasks?archived=false" for 127.0.0.1 at 2014-06-28 16:08:28 -0500
+Processing by TasksController#index as HTML
+  Parameters: {"archived"=>"false", "exclude"=>[:show]}
+  Rendered tasks/_form.html.erb (4.5ms)
+  Rendered tasks/_search_form.html.erb (0.4ms)
+  [1m[36mTask Load (0.2ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."archived" = 'f'[0m
+  Rendered tasks/index.html.erb within layouts/application (14.5ms)
+Completed 200 OK in 22ms (Views: 19.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-28 16:08:28 -0500
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-06-28 16:08:28 -0500
+
+
+Started GET "/assets/docs.css?body=1" for 127.0.0.1 at 2014-06-28 16:08:28 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-28 16:08:28 -0500
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-06-28 16:08:28 -0500
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2014-06-28 16:08:28 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-28 16:08:28 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-28 16:08:28 -0500
+
+
+Started GET "/assets/docs.js?body=1" for 127.0.0.1 at 2014-06-28 16:08:28 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-28 16:08:28 -0500
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-06-28 16:08:28 -0500
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2014-06-28 16:08:28 -0500
+
+
+Started GET "/assets/maps_javascript.js?body=1" for 127.0.0.1 at 2014-06-28 16:08:28 -0500
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2014-06-28 16:08:28 -0500
+
+
+Started GET "/assets/tasks_javascript.js?body=1" for 127.0.0.1 at 2014-06-28 16:08:28 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-28 16:08:28 -0500
+
+
+Started GET "/tasks?utf8=%E2%9C%93&q=Currently" for 127.0.0.1 at 2014-06-28 16:08:37 -0500
+Processing by TasksController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"Currently", "exclude"=>[:show]}
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from index at /Users/vikas/SurvlyTest/app/controllers/tasks_controller.rb:13)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from index at /Users/vikas/SurvlyTest/app/controllers/tasks_controller.rb:13)
+  [1m[35mTask Load (0.1ms)[0m  SELECT "tasks".* FROM "tasks" WHERE (title LIKE '%Currently%')
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from index at /Users/vikas/SurvlyTest/app/controllers/tasks_controller.rb:13)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from index at /Users/vikas/SurvlyTest/app/controllers/tasks_controller.rb:13)
+  [1m[36mTask Load (0.1ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE (description LIKE '%Currently%')[0m
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `or' for []:Array):
+  app/controllers/tasks_controller.rb:13:in `index'
+
+
+  Rendered /Users/vikas/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/vikas/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Users/vikas/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/vikas/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.4ms)
